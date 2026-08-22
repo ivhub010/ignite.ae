@@ -12,7 +12,7 @@ button{font-family:inherit}
 .nav.scrolled{background:rgba(15,25,35,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}
 .nav-logo{font:900 italic 22px/1 var(--font-archivo),sans-serif;color:#fff;letter-spacing:-.02em}
 .nav-right{display:flex;align-items:center;gap:20px}
-.nav-link{font:500 11px/1 var(--font-inter),sans-serif;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.4);transition:color .2s}
+.nav-link{font:500 11px/1 var(--font-inter),sans-serif;text-transform:uppercase;letter-spacing:.12em;color:#eaeaea;transition:color .2s}
 .nav-link:hover{color:#fff}
 .nav-link.pink:hover{color:#CE00A0}
 .nav-cta{background:var(--lime);color:#0F1923;font:700 11px/1 var(--font-archivo),sans-serif;text-transform:uppercase;letter-spacing:.08em;padding:10px 22px;border-radius:8px;transition:background .2s}
