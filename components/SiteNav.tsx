@@ -54,7 +54,7 @@ export default function SiteNav() {
           <Link href="/events" className="nav-link">Events</Link>
           <Link href="/pink-is-punk" className="nav-link pink">Pink is Punk</Link>
           <Link href="/blog" className="nav-link">News</Link>
-          <Link href="/contact" className="nav-cta">Book a session</Link>
+          {/* <Link href="/contact" className="nav-cta">Book a session</Link> */}
           <button
             className={'nav-menu-btn' + (open ? ' open' : '')}
             onClick={() => setOpen(o => !o)}
