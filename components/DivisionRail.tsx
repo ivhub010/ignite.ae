@@ -74,7 +74,7 @@ export default function DivisionRail() {
           <p className="rail-image-title">{current.label}</p>
           <div className="rail-chips">
             {current.chips?.map(c => (
-              <span key={c} className="rail-chip" style={{ color: current.color }}>{c}</span>
+              <span key={c} className="rail-chip" style={{ color: current.color, backgroundColor: "rgba(0, 0, 0,0.7)" }}>{c}</span>
             ))}
           </div>
           <DivisionLink href={current.href} external={current.external} className="rail-panel-cta" style={{ color: current.color, borderColor: current.color, backgroundColor: "rgba(0, 0, 0,0.7)" }}>
