@@ -77,6 +77,9 @@ export default function DivisionRail() {
               <span key={c} className="rail-chip" style={{ color: current.color }}>{c}</span>
             ))}
           </div>
+          <DivisionLink href={current.href} external={current.external} className="rail-panel-cta" style={{ color: current.color, borderColor: current.color }}>
+                      {current.external ? 'Visit site →' : 'Explore →'}
+                    </DivisionLink>
         </div>
       </div>
     </section>
