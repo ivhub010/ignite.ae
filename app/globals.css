@@ -405,7 +405,7 @@ button{font-family:inherit}
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 130px 80px 90px;
+  padding: 5px 0;
 }
 
 .pip-campaign-label {
@@ -604,7 +604,7 @@ button{font-family:inherit}
   }
 
   .pip-hero-content {
-    padding: 110px 22px 55px;
+    padding: 20px 22px 55px;
   }
 
   .pip-campaign-label {
