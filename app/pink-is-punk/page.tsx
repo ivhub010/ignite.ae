@@ -14,17 +14,61 @@ export default function PinkIsPunk() {
   return (
     <main>
       <section className="pip-hero">
-        <div className="pip-pattern" />
-        <h1 className="pip-title">Pink<br />is<br />Punk.</h1>
-        <p className="pip-sub">IGNITE&rsquo;s annual breast cancer awareness campaign raises funds for Al Jalila Foundation and brings the UAE community together through movement, solidarity, and a lot of pink.</p>
-        <div className="pip-stats">
-          <div><div className="pip-stat">7+</div><div className="pip-stat-label">Years running</div></div>
-          <div><div className="pip-stat">AED 500k+</div><div className="pip-stat-label">Raised to date</div></div>
-          <div><div className="pip-stat">3,000+</div><div className="pip-stat-label">Participants</div></div>
-        </div>
-      </section>
 
-      <section className="content-block">
+      {/* Background */}
+      <div className="hero-bg">
+        <img
+          src="/assets/images/IGNITE-Fitness-Wellness.png"
+          alt=""
+        />
+        <div className="hero-bg-overlay" />
+      </div>
+
+      {/* Hero Content */}
+      <div className="pip-hero-content">
+
+        <div className="pip-campaign-label">
+          🎗 BREAST CANCER AWARENESS · 2024
+        </div>
+
+        <h1 className="pip-title">
+          Pink
+          <br />
+          is <span>Punk.</span>
+        </h1>
+
+        <p className="pip-sub">
+          Three events. One mission. 100% of donations go to Al Jalila
+          Foundation — funding breast cancer research and care across the UAE.
+        </p>
+
+        <div className="pip-raised">
+          <div className="pip-raised-amount">
+            AED 123,000+
+          </div>
+
+          <div className="pip-raised-copy">
+            AED raised in 2024, donated
+            <br />
+            in full to Al Jalila Foundation
+          </div>
+        </div>
+
+        <div className="pip-actions">
+          <Link href="#campaign" className="pip-btn pip-btn-primary">
+            SEE THE CAMPAIGN
+          </Link>
+
+          <Link href="/contact" className="pip-btn pip-btn-outline">
+            SUPPORT 2025 <span>→</span>
+          </Link>
+        </div>
+
+      </div>
+
+    </section>
+
+      <section id="campaign" className="content-block">
         <p className="content-label" style={{ color: '#CE00A0' }}>The campaign</p>
         <h2 className="content-lead">Awareness through action.</h2>
         <p className="content-body">Pink is Punk started in 2018 with a single run on Dubai Marina Walk. What began as a small community event has grown into one of the UAE&rsquo;s most recognised annual wellness campaigns, drawing thousands of participants each October and raising significant funds for breast cancer research and support at Al Jalila Foundation.</p>

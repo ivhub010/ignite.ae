@@ -348,3 +348,309 @@ button{font-family:inherit}
   .footer-wordmark{margin-bottom:28px}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important}}
+
+
+.pip-hero {
+  position: relative;
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #071321;
+  color: #fff;
+}
+
+/* =========================
+   BACKGROUND
+========================= */
+
+.pip-hero .hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.pip-hero .hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pip-hero .hero-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 16, 29, 0.93) 0%,
+      rgba(5, 16, 29, 0.75) 42%,
+      rgba(5, 16, 29, 0.45) 75%,
+      rgba(5, 16, 29, 0.35) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(5, 16, 29, 0.92) 0%,
+      rgba(5, 16, 29, 0.1) 60%
+    );
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.pip-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 130px 80px 90px;
+}
+
+.pip-campaign-label {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 38px;
+  color: #e000a8;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.pip-title {
+  margin: 0;
+  max-width: 620px;
+  font-size: clamp(80px, 9vw, 145px);
+  line-height: 0.82;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -6px;
+  color: #fff;
+}
+
+.pip-title span {
+  color: #d800a4;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.pip-sub {
+  max-width: 780px;
+  margin: 45px 0 50px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 25px;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+/* =========================
+   MONEY RAISED BOX
+========================= */
+
+.pip-raised {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  width: fit-content;
+  min-width: 760px;
+  padding: 27px 38px;
+  margin-bottom: 45px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(209, 0, 157, 0.18),
+    rgba(150, 59, 140, 0.23)
+  );
+
+  border-left: 4px solid #e000a8;
+}
+
+.pip-raised-amount {
+  color: #e000a8;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 900;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.pip-raised-copy {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.pip-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pip-btn {
+  min-width: 240px;
+  padding: 20px 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.pip-btn:hover {
+  transform: translateY(-2px);
+}
+
+.pip-btn-primary {
+  background: #dc00a5;
+  border: 1px solid #dc00a5;
+  color: #fff;
+}
+
+.pip-btn-primary:hover {
+  background: #ef00b5;
+}
+
+.pip-btn-outline {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pip-btn-outline:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+  .pip-hero {
+    min-height: 800px;
+  }
+
+  .pip-hero-content {
+    padding: 120px 45px 70px;
+  }
+
+  .pip-title {
+    font-size: 100px;
+  }
+
+  .pip-sub {
+    max-width: 650px;
+    font-size: 21px;
+  }
+
+  .pip-raised {
+    min-width: 0;
+    width: 100%;
+    max-width: 760px;
+  }
+
+  .pip-raised-amount {
+    font-size: 48px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+  .pip-hero {
+    min-height: 760px;
+    align-items: flex-end;
+  }
+
+  .pip-hero .hero-bg img {
+    object-position: 60% center;
+  }
+
+  .pip-hero .hero-bg-overlay {
+    background:
+      linear-gradient(
+        0deg,
+        rgba(5, 16, 29, 0.98) 0%,
+        rgba(5, 16, 29, 0.78) 55%,
+        rgba(5, 16, 29, 0.4) 100%
+      );
+  }
+
+  .pip-hero-content {
+    padding: 110px 22px 55px;
+  }
+
+  .pip-campaign-label {
+    margin-bottom: 25px;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+  }
+
+  .pip-title {
+    font-size: clamp(65px, 21vw, 92px);
+    line-height: 0.85;
+    letter-spacing: -4px;
+  }
+
+  .pip-sub {
+    margin: 30px 0;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .pip-raised {
+    width: 100%;
+    min-width: 0;
+    padding: 20px;
+    margin-bottom: 30px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pip-raised-amount {
+    font-size: 38px;
+  }
+
+  .pip-raised-copy {
+    font-size: 13px;
+  }
+
+  .pip-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pip-btn {
+    width: 100%;
+    min-width: 0;
+  }
+}
