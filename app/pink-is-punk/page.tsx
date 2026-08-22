@@ -1,114 +1,95 @@
 import type { Metadata } from 'next';
-import PinkIsPunkClient from './PinkIsPunkClient';
+import Link from 'next/link';
 
 export const metadata: Metadata = { title: 'Pink is Punk' };
 
-const IMPACT = [
-  { color: '#CE00A0', target: 123000, prefix: 'AED ', label: 'Raised & donated' },
-  { color: '#FF9E19', target: 3, suffix: '', label: 'Events held in 2024' },
-  { color: '#fff', target: 100, suffix: '%', label: 'Donated to Al Jalila Foundation' },
-];
-
-const GALLERY = [
-  { src: '/assets/images/pip-0159.jpg', alt: 'Pink is Punk 2018', className: 'gallery-cell wide tall' },
-  { src: '/assets/images/pip-1783.jpg', alt: 'Pink is Punk', className: 'gallery-cell' },
-  { src: '/assets/images/pip-1805.jpg', alt: 'Pink is Punk', className: 'gallery-cell' },
-  { src: '/assets/images/Pink-Paddle.jpg', alt: 'Pink Paddle 2026', className: 'gallery-cell' },
-  { src: '/assets/images/pip-1946.jpg', alt: 'Pink is Punk', className: 'gallery-cell' },
-];
-
-const SPONSOR_TIERS = [
-  { tier: 'Title Sponsor', pills: [{ name: 'Medcare Women & Children Hospital', title: true }] },
-  { tier: 'Venue Partners', pills: [{ name: 'Anantara The Palm' }, { name: 'RIVA Beach Club' }] },
-  { tier: 'Supporting Partners', pills: ['Keen PR', 'JLW', 'Kibsons', 'Spendlove Group', 'Urban Veda', 'VITALICE', 'Maxi Nutrition', 'Costa', 'Pret', "Mr. Toad's"].map(name => ({ name })) },
+const WAYS = [
+  ['Run 5K', 'Put on your pink kit and join the community run. All speeds and fitness levels.'],
+  ['Sunrise Yoga', 'Start the day with a guided outdoor yoga session on the beach.'],
+  ['Corporate Team', 'Enter your company team and earn your pink finisher medal together.'],
+  ['Sponsor the campaign', 'Partner with IGNITE and Al Jalila Foundation to amplify your brand\'s impact.'],
 ];
 
 export default function PinkIsPunk() {
   return (
-    <>
     <main>
-      <section className="campaign-hero">
-        <div className="hero-bg"><img src="/assets/images/pip-01.jpg" alt="Pink is Punk" loading="eager" /></div>
-        <div className="hero-overlay" />
-        <div className="hero-accent-bar" />
-        <div className="hero-content">
-          <div className="campaign-label"><span>🎗️ Breast Cancer Awareness · 2024</span></div>
-          <h1 className="pip-ribbon">Pink<br />is <span className="mg">Punk.</span></h1>
-          <p className="pip-sub">Three events. One mission. 100% of donations go to Al Jalila Foundation — funding breast cancer research and care across the UAE.</p>
-          <div className="pip-impact">
-            <PinkIsPunkClient.AedCounter />
-            <div className="pip-impact-label">AED raised in 2024, donated in full to Al Jalila Foundation</div>
+      <section className="pip-hero">
+
+      {/* Background */}
+      <div className="hero-bg">
+        <img
+          src="/assets/images/Swim-Run.jpg"
+          alt=""
+        />
+        <div className="hero-bg-overlay" />
+      </div>
+
+      {/* Hero Content */}
+      <div className="pip-hero-content">
+
+        <div className="pip-campaign-label">
+          🎗 BREAST CANCER AWARENESS · 2024
+        </div>
+
+        <h1 className="pip-title">
+          Pink
+          <br />
+          is <span>Punk.</span>
+        </h1>
+
+        <p className="pip-sub">
+          Three events. One mission. 100% of donations go to Al Jalila
+          Foundation — funding breast cancer research and care across the UAE.
+        </p>
+
+        <div className="pip-raised">
+          <div className="pip-raised-amount">
+            AED 123,000+
           </div>
-          <div className="hero-cta-row">
-            <a href="#gallery" className="btn-mg">See the campaign</a>
-            <a href="#donate" className="btn-outline">Support 2025 →</a>
+
+          <div className="pip-raised-copy">
+            AED raised in 2024, donated
+            <br />
+            in full to Al Jalila Foundation
           </div>
         </div>
+
+        <div className="pip-actions">
+          <Link href="#campaign" className="pip-btn pip-btn-primary">
+            SEE THE CAMPAIGN
+          </Link>
+
+          <Link href="/contact" className="pip-btn pip-btn-outline">
+            SUPPORT 2025 <span>→</span>
+          </Link>
+        </div>
+
+      </div>
+
+    </section>
+
+      <section id="campaign" className="content-block">
+        <p className="content-label" style={{ color: '#CE00A0' }}>The campaign</p>
+        <h2 className="content-lead">Awareness through action.</h2>
+        <p className="content-body">Pink is Punk started in 2018 with a single run on Dubai Marina Walk. What began as a small community event has grown into one of the UAE&rsquo;s most recognised annual wellness campaigns, drawing thousands of participants each October and raising significant funds for breast cancer research and support at Al Jalila Foundation.</p>
+        <p className="content-body">The premise is simple: wear pink, move your body, and stand with the people fighting breast cancer in our community. Every year we add a new event — a sunrise yoga session, a group swim, a beach boot camp — all under the Pink is Punk banner.</p>
       </section>
 
-      <section className="impact-section">
-        <div className="section-eyebrow">2024 Campaign Impact</div>
-        <h2 style={{ font: '700 italic clamp(28px,4vw,48px)/1.1 Archivo,sans-serif', color: '#fff', maxWidth: 640, marginBottom: 0 }}>Three events. One community. Real impact.</h2>
-        <div className="impact-grid">
-          {IMPACT.map(i => (
-            <div key={i.label} className="impact-tile">
-              <PinkIsPunkClient.Counter color={i.color} target={i.target} prefix={i.prefix} suffix={i.suffix} />
-              <div className="impact-lbl">{i.label}</div>
+      <section className="content-block dark">
+        <p className="content-label" style={{ color: '#CE00A0' }}>How to get involved</p>
+        <h2 className="content-lead">Join us in October 2025.</h2>
+        <div className="card-grid">
+          {WAYS.map(([t, d]) => (
+            <div key={t} className="card">
+              <h3 className="card-title">{t}</h3>
+              <p className="card-body">{d}</p>
             </div>
           ))}
         </div>
-      </section>
-
-      <section className="gallery-section" id="gallery">
-        <div className="section-eyebrow">Campaign Gallery</div>
-        <h2 className="section-heading">Wellness, community, and the colour pink.</h2>
-        <div className="gallery-grid">
-          {GALLERY.map(g => (
-            <div key={g.src} className={g.className}>
-              <img src={g.src} alt={g.alt} />
-              <div className="gallery-overlay" />
-            </div>
-          ))}
+        <div style={{ marginTop: 48 }}>
+          <Link href="/contact" className="btn-primary" style={{ background: '#CE00A0', color: '#fff' }}>Register your team</Link>
         </div>
-      </section>
-
-      <section className="sponsors-section">
-        <div className="section-eyebrow">2024 Partners & Sponsors</div>
-        <h2 style={{ font: '700 italic clamp(28px,4vw,48px)/1.1 Archivo,sans-serif', color: '#fff', marginBottom: 48 }}>The community that made it happen.</h2>
-        {SPONSOR_TIERS.map(t => (
-          <div key={t.tier} className="sponsor-tier">
-            <div className="tier-label">{t.tier}</div>
-            <div className="sponsor-row">
-              {t.pills.map(p => (
-                <div key={p.name} className={`sponsor-pill title-sponsor`}>{p.name}</div>
-              ))}
-            </div>
-          </div>
-        ))}
-      </section>
-
-      <section className="foundation-section">
-        <div>
-          <div className="section-eyebrow">Our charity partner</div>
-          <h2 className="section-heading">Al Jalila Foundation</h2>
-          <p style={{ font: "400 15px/1.7 'Inter',sans-serif", color: 'rgba(255,255,255,.55)', maxWidth: 480, marginBottom: 24 }}>Every dirham raised through Pink is Punk goes directly to Al Jalila Foundation, funding breast cancer research, early detection and patient care across the UAE. No deductions. No overheads.</p>
-          <a href="https://aljalilaFoundation.ae" className="btn-mg" style={{ display: 'inline-block' }}>Al Jalila Foundation →</a>
-        </div>
-        <div className="foundation-image">
-          <img src="/assets/images/pip-1743.jpg" alt="Pink is Punk community" loading="lazy" />
-          <div className="foundation-image-overlay" />
-          <div className="donation-badge">
-            <span className="donation-amount">AED 123,000+</span>
-            <span className="donation-label">Raised in 2024</span>
-          </div>
-        </div>
-      </section>
-
-      <section className="cta-strip" id="donate">
-        <div className="cta-heading">Want to be part of Pink is Punk 2025? Sponsor, volunteer, or join an event.</div>
-        <a href="mailto:info@ignite.ae" className="btn-white">Get involved</a>
       </section>
     </main>
-    </>
   );
 }
