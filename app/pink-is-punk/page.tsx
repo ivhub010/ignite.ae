@@ -80,7 +80,7 @@ export default function PinkIsPunk() {
             <div className="tier-label">{t.tier}</div>
             <div className="sponsor-row">
               {t.pills.map(p => (
-                <div key={p.name} className={`sponsor-pill${p.title ? ' title-sponsor' : ''}`}>{p.name}</div>
+                <div key={p.name} className={`sponsor-pill title-sponsor`}>{p.name}</div>
               ))}
             </div>
           </div>
