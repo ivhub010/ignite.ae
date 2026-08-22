@@ -50,6 +50,7 @@ export default function SiteNav() {
       <nav className={'nav' + (scrolled ? ' scrolled' : '')}>
         <Link href="/" className="nav-logo">IGNITE</Link>
         <div className="nav-right">
+          <Link href="/" className="nav-link">Home</Link>
           <Link href="/about" className="nav-link">About</Link>
           <Link href="/events" className="nav-link">Events</Link>
           <Link href="/pink-is-punk" className="nav-link pink">Pink is Punk</Link>
