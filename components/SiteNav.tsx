@@ -7,11 +7,11 @@ import DivisionLink from './DivisionLink';
 
 const PAGES: [string, string, string?][] = [
   ['Home', '/'],
-  ['Who we are', '/about'],
-  ['Events', '/events'],
-  ['Pink is Punk', '/pink-is-punk', '#CE00A0'],
-  ['News', '/blog'],
-  ['Contact', '/contact'],
+  ['About Us', '/about'],
+  ['Events', '#'],
+  // ['Pink is Punk', '/pink-is-punk', '#CE00A0'],
+  // ['News', '/blog'],
+  ['Contact Us', '/contact'],
 ];
 
 export default function SiteNav() {
@@ -52,17 +52,31 @@ export default function SiteNav() {
         <div className="nav-right">
           <Link href="/" className="nav-link">Home</Link>
           <Link href="/about" className="nav-link">About</Link>
-          <Link href="/events" className="nav-link">Events</Link>
-          <Link href="/pink-is-punk" className="nav-link pink">Pink is Punk</Link>
-          <Link href="/blog" className="nav-link">News</Link>
-          {/* <Link href="/contact" className="nav-cta">Book a session</Link> */}
+
+          <div className="nav-dropdown">
+            <Link href="/events" className="nav-link nav-dropdown-trigger">
+              Events
+              <span className="nav-dropdown-arrow">⌄</span>
+            </Link>
+
+            <div className="nav-dropdown-menu">
+              <Link href="/pink-is-punk" className="nav-dropdown-link pink">
+                Pink is Punk
+              </Link>
+            </div>
+          </div>
+
+          <Link href="/contact" className="nav-link">contact</Link>
+
           <button
             className={'nav-menu-btn' + (open ? ' open' : '')}
             onClick={() => setOpen(o => !o)}
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
           >
-            <span className="hb-bar" /><span className="hb-bar" /><span className="hb-bar" />
+            <span className="hb-bar" />
+            <span className="hb-bar" />
+            <span className="hb-bar" />
           </button>
         </div>
       </nav>
@@ -72,6 +86,44 @@ export default function SiteNav() {
 
         <div className="ov-left">
           <div className="ov-scroll">
+          
+            {/* Mobile-only: pages + contact live here since the right pane is hidden */}
+            <div className="ov-mobile-extra">
+              <p className="ov-eyebrow ov-item" style={{ marginTop: 36, transitionDelay: '.44s' }}>Navigate</p>
+              <div className="ov-nav-links">
+                {PAGES.map(([label, href, color], i) => (
+                  <div key={href}>
+                    <Link
+                      href={href}
+                      className="ov-nav-link ov-item"
+                      style={{
+                        color,
+                        transitionDelay: `${0.48 + i * 0.03}s`
+                      }}
+                      onClick={close}
+                    >
+                      {label}
+                    </Link>
+
+                    {label === 'Events' && (
+                      <Link
+                        href="/pink-is-punk"
+                        className="ov-nav-link ov-nav-sublink ov-item"
+                        style={{
+                          color: '#CE00A0',
+                          transitionDelay: `${0.50 + i * 0.03}s`
+                        }}
+                        onClick={close}
+                      >
+                        Pink is Punk
+                      </Link>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+            <br/>
+            <br/>
             <p className="ov-eyebrow ov-item" style={{ transitionDelay: '.1s' }}>Divisions</p>
             {DIVISIONS.map((d, i) => (
               <DivisionLink
@@ -87,20 +139,7 @@ export default function SiteNav() {
               </DivisionLink>
             ))}
 
-            {/* Mobile-only: pages + contact live here since the right pane is hidden */}
             <div className="ov-mobile-extra">
-              <p className="ov-eyebrow ov-item" style={{ marginTop: 36, transitionDelay: '.44s' }}>Navigate</p>
-              <div className="ov-nav-links">
-                {PAGES.map(([label, href, color], i) => (
-                  <Link
-                    key={href}
-                    href={href}
-                    className="ov-nav-link ov-item"
-                    style={{ color, transitionDelay: `${0.48 + i * 0.03}s` }}
-                    onClick={close}
-                  >{label}</Link>
-                ))}
-              </div>
               <div className="ov-item" style={{ marginTop: 32, transitionDelay: '.7s' }}>
                 <p className="ov-eyebrow">Get in touch</p>
                 <a href="tel:800446483" className="ov-contact-tel">800 IGNITE</a>
@@ -115,7 +154,27 @@ export default function SiteNav() {
           <div className="ov-nav-links ov-item" style={{ transitionDelay: '.2s' }}>
             <p className="ov-eyebrow" style={{ marginBottom: 16 }}>Navigate</p>
             {PAGES.map(([label, href, color]) => (
-              <Link key={href} href={href} className="ov-nav-link" style={{ color }} onClick={close}>{label}</Link>
+              <div key={href}>
+                <Link
+                  href={href}
+                  className="ov-nav-link"
+                  style={{ color }}
+                  onClick={close}
+                >
+                  {label}
+                </Link>
+
+                {label === 'Events' && (
+                  <Link
+                    href="/pink-is-punk"
+                    className="ov-nav-link ov-nav-sublink"
+                    style={{ color: '#CE00A0' }}
+                    onClick={close}
+                  >
+                    Pink is Punk
+                  </Link>
+                )}
+              </div>
             ))}
           </div>
           <div className="ov-item" style={{ transitionDelay: '.28s' }}>
