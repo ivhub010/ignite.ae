@@ -75,10 +75,10 @@ export default function Home() {
             <Link href="/contact" className="btn-ghost">Talk to us <span style={{ color: '#D2DD29' }}>→</span></Link>
           </div>
           <div className="hero-stats">
-            <div><div className="hero-stat-num">17+</div><div className="hero-stat-label">Years</div></div>
+            <div><div className="hero-stat-num">2010</div><div className="hero-stat-label">Established</div></div>
             <div><div className="hero-stat-num">10k+</div><div className="hero-stat-label">People moved</div></div>
-            <div><div className="hero-stat-num">500+</div><div className="hero-stat-label">Clients</div></div>
-            <div><div className="hero-stat-num">8</div><div className="hero-stat-label">Divisions</div></div>
+            <div><div className="hero-stat-num">2500+</div><div className="hero-stat-label">Satisfied Clients</div></div>
+            {/* <div><div className="hero-stat-num">8</div><div className="hero-stat-label">Divisions</div></div> */}
           </div>
         </div>
       </section>
