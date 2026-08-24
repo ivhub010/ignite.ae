@@ -16,7 +16,7 @@ export default function Home() {
   const [wordVisible, setWordVisible] = useState(true);
   const [tIdx, setTIdx] = useState(0);
   const statsRef = useRef<HTMLElement>(null);
-  const [counts, setCounts] = useState([2007, 0, 0, 0]);
+  const [counts, setCounts] = useState([2010, 0, 0, 0]);
 
   useEffect(() => {
     const t = setInterval(() => {
@@ -34,7 +34,7 @@ export default function Home() {
   useEffect(() => {
     const el = statsRef.current;
     if (!el) return;
-    const targets = [2007, 17, 10000, 500];
+    const targets = [2010, 60, 10000, 2500];
     const obs = new IntersectionObserver(entries => {
       if (!entries[0].isIntersecting) return;
       obs.disconnect();
@@ -74,12 +74,12 @@ export default function Home() {
             <a href="#divisions" className="btn-primary">Explore Services</a>
             <Link href="/contact" className="btn-ghost">Talk to us <span style={{ color: '#D2DD29' }}>→</span></Link>
           </div>
-          <div className="hero-stats">
+          {/* <div className="hero-stats">
             <div><div className="hero-stat-num">2010</div><div className="hero-stat-label">Established</div></div>
             <div><div className="hero-stat-num">10k+</div><div className="hero-stat-label">People moved</div></div>
             <div><div className="hero-stat-num">2500+</div><div className="hero-stat-label">Satisfied Clients</div></div>
-            {/* <div><div className="hero-stat-num">8</div><div className="hero-stat-label">Divisions</div></div> */}
-          </div>
+            <div><div className="hero-stat-num">8</div><div className="hero-stat-label">Divisions</div></div>
+          </div> */}
         </div>
       </section>
 
@@ -90,7 +90,7 @@ export default function Home() {
         <h2 className="stats-heading">Seventeen years of moving people forward.</h2>
         <div className="stats-grid">
           <div className="stat-tile"><div className="stat-num">{counts[0]}</div><div className="stat-label">Established</div></div>
-          <div className="stat-tile"><div className="stat-num">{counts[1]}+</div><div className="stat-label">Years experience</div></div>
+          <div className="stat-tile"><div className="stat-num">{counts[1]}+</div><div className="stat-label">Years combined experience</div></div>
           <div className="stat-tile"><div className="stat-num">{counts[2].toLocaleString('en-US')}+</div><div className="stat-label">People moved</div></div>
           <div className="stat-tile"><div className="stat-num">{counts[3]}+</div><div className="stat-label">Satisfied clients</div></div>
         </div>
