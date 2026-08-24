@@ -60,7 +60,7 @@ export default function Home() {
         </div>
         <div className="hero-left">
           <div className="hero-accent-line" />
-          <p className="hero-eyebrow">Dubai UAE · Since 2007</p>
+          <p className="hero-eyebrow">Dubai UAE · Since 2010</p>
           <h1 className="hero-display">
             Move with<br />
             <span className="hero-word" style={{
@@ -69,9 +69,9 @@ export default function Home() {
               transition: 'opacity .4s ease, transform .5s cubic-bezier(.16,1,.3,1)',
             }}>{WORDS[wordIdx]}</span>
           </h1>
-          <p className="hero-sub">Eight divisions. One mission — contributing to the quality of life of our community by encouraging healthy lifestyle habits and movement.</p>
+          <p className="hero-sub">IGNITE as a brand started back in 2010 with our fitness arm IGNITE fitness & wellness. From there we have grown and added services along the way with IGNITE Surface, IGNITE corporate wellness, IGNITE team building, IGNITE kids, IGNITE consultancy and Homespa.</p>
           <div className="hero-actions">
-            <a href="#divisions" className="btn-primary">Explore divisions</a>
+            <a href="#divisions" className="btn-primary">Explore Services</a>
             <Link href="/contact" className="btn-ghost">Talk to us <span style={{ color: '#D2DD29' }}>→</span></Link>
           </div>
           <div className="hero-stats">
