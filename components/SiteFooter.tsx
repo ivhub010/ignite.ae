@@ -24,10 +24,8 @@ export default function SiteFooter() {
           <div>
             <p className="footer-heading">Company</p>
             <ul className="footer-links">
-              <li><Link href="/about">Who we are</Link></li>
-              <li><Link href="/events">Events</Link></li>
-              <li><Link href="/pink-is-punk">Pink is Punk</Link></li>
-              <li><Link href="/blog">News</Link></li>
+              <li><Link href="/about">About Us</Link></li>
+              <li><Link href="/pink-is-punk">Pink is Punk Event</Link></li>
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
