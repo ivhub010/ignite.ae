@@ -9,7 +9,7 @@ export type Division = {
 };
 
 export const DIVISIONS: Division[] = [
-  { num:'01', label:'Fitness & Wellness', color:'#C2D500', href:'https://ignite-wellness.com/ ',                        chips:['Boot Camp','Yoga','Classes'],         image:'/assets/images/IGNITE-Fitness-Wellness.png' },
+  { num:'01', label:'Fitness & Wellness', color:'#C2D500', href:'https://ignite-wellness.com/ ',                        chips:['Boot Camp','Yoga','Classes'],         image:'/assets/images/IMG_8547-600x300@2x.jpg' },
   { num:'02', label:'Corporate Wellness', color:'#00AE97', href:'https://corporatewellnessme.com/',    external:true, chips:['Programmes','Workshops','Events'], image:'/assets/images/IGNITE-Corporate-Wellness.png' },
   { num:'03', label:'Team Building',      color:'#F93549', href:'https://igniteteambuilding.com/', external:true, chips:['Challenges','Outdoor','Custom'],   image:'/assets/images/IGNITE-Team-Building.png' },
   { num:'04', label:'Water Sports',       color:'#53C8E9', href:'https://ignitewatersports.com/',  external:true, chips:['SUP','Kayak','Beach Yoga'],        image:'/assets/images/IGNITE-Water-Sports.png' },

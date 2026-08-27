@@ -104,6 +104,132 @@ Highly professional and truly recommend the Ignite team which brings the positiv
   },
 ];
 
+const BRANDS = [
+  { name: "4 SIGHT", image: "/assets/images/brands/4-sight-global-logo-e1738058076673.jpg" },
+  { name: "Face", image: "/assets/images/brands/FACE-logo-e1738057789603.jpg" },
+  { name: "Instashop", image: "/assets/images/brands/InstaShop-logo.png" },
+  { name: "Omniyat", image: "/assets/images/brands/omniyat-logo-e1737548528518.jpg" },
+  { name: "ICBA", image: "/assets/images/brands/ICBA-logo.png" },
+  { name: "Damac", image: "/assets/images/brands/DAMAC-logo-e1735822317400.png" },
+  { name: "ENOC", image: "/assets/images/brands/ENOC-logo.png" },
+  { name: "3C Metal", image: "/assets/images/brands/3C-Metal-logo-e1735822232377.jpg" },
+  { name: "Vista", image: "/assets/images/brands/VISTA-logo.png" },
+  { name: "Duracell", image: "/assets/images/brands/Duracell-logo.png" },
+
+  { name: "StickyGinger", image: "/assets/images/brands/Stickyginger.png" },
+  { name: "Talabat", image: "/assets/images/brands/Talabat-Logo-new-2025.jpeg" },
+  { name: "Shurooq", image: "/assets/images/brands/Shurooq-Logo.jpg" },
+  { name: "PWC", image: "/assets/images/brands/PricewaterhouseCoopers_Logo.png" },
+  { name: "NMK", image: "/assets/images/brands/NMK.png" },
+  { name: "General Mills", image: "/assets/images/brands/Gen-Mills.png" },
+  { name: "Flow Test", image: "/assets/images/brands/Flow-Test.png" },
+  { name: "Dubai Customs", image: "/assets/images/brands/dubai-customs-vector-logo.png" },
+  { name: "DNV", image: "/assets/images/brands/DNV-Logo.jpg" },
+  { name: "Deloitte", image: "/assets/images/brands/Deloitte-Logo.jpg" },
+  { name: "Chanel", image: "/assets/images/brands/Chanel-logo.png" },
+  { name: "Buhler", image: "/assets/images/brands/Buhler-logo.png" },
+  { name: "Axis Communications", image: "/assets/images/brands/Axis-Communication-Logo.jpg" },
+  { name: "Booking.com", image: "/assets/images/brands/2560px-Booking.com_logo.png" },
+
+  { name: "McKinsey", image: "/assets/images/brands/McKinsey_2019.png" },
+  { name: "RAK ICC", image: "/assets/images/brands/rakicc_logo-.png" },
+  { name: "Averda", image: "/assets/images/brands/averda.jpg" },
+
+  { name: "Masar", image: "/assets/images/brands/masar.png" },
+  { name: "Danzas", image: "/assets/images/brands/danzas.png" },
+  { name: "Idemia", image: "/assets/images/brands/idemia.png" },
+  { name: "Manzil", image: "/assets/images/brands/manzil.png" },
+  { name: "Techno Gym", image: "/assets/images/brands/technogym.png" },
+  { name: "Smart Dubai", image: "/assets/images/brands/smart-dubai.png" },
+
+  { name: "Walkers", image: "/assets/images/brands/walkers.png" },
+
+  { name: "DP World", image: "/assets/images/brands/dp-world.png" },
+  { name: "Dubai Media INC", image: "/assets/images/brands/dubai-media-inc.png" },
+  { name: "Dubai World Trade Center", image: "/assets/images/brands/dubai-trade-center.png" },
+  { name: "Land Department", image: "/assets/images/brands/land-dept.png" },
+  { name: "Omnicom Media Group", image: "/assets/images/brands/omnimediagroup.png" },
+  { name: "RTA", image: "/assets/images/brands/rta-roads.png" },
+  { name: "DLA Piper", image: "/assets/images/brands/dla-piper.png" },
+  { name: "Bloomberg", image: "/assets/images/brands/bloomberg.png" },
+  { name: "Coca Cola", image: "/assets/images/brands/coca-cola.png" },
+  { name: "Department of Economic Development", image: "/assets/images/brands/department-of-economic-development.png" },
+  { name: "Dubai Holding", image: "/assets/images/brands/dubai-holding.png" },
+  { name: "Dubai Tourism", image: "/assets/images/brands/dubai-tourism.png" },
+  { name: "Hult International Business School", image: "/assets/images/brands/hult-IBS.png" },
+  { name: "JLW", image: "/assets/images/brands/JLW-1875.png" },
+  { name: "Jotun", image: "/assets/images/brands/jotun.png" },
+  { name: "Michael Page", image: "/assets/images/brands/michael-page.png" },
+  { name: "Microsoft", image: "/assets/images/brands/microsoft.png" },
+  { name: "Nestle", image: "/assets/images/brands/nestle.png" },
+  { name: "Oman Insurance Company", image: "/assets/images/brands/oman-ins-company.png" },
+  { name: "Pepsico", image: "/assets/images/brands/pepsico.png" },
+  { name: "P&G", image: "/assets/images/brands/P-G.png" },
+  { name: "Rotana Hotels & Resorts", image: "/assets/images/brands/rotana-hotels.png" },
+  { name: "Seadrill", image: "/assets/images/brands/seadrill.png" },
+  { name: "Shuaa Capital", image: "/assets/images/brands/shuaa-capital.png" },
+  { name: "Siemens", image: "/assets/images/brands/siemens.png" },
+  { name: "Stephenson Harwood", image: "/assets/images/brands/stephenson-harwood.png" },
+  { name: "Stolt Nielsen", image: "/assets/images/brands/stolt-nielsen.png" },
+];
+
+const LATEST_NEWS = [
+  {
+    date: 'February 13, 2026',
+    title: 'Société Générale',
+    image: '/assets/images/news/societe.png',
+    // link: 'https://ignite.ae/societe-generale/',
+    link: '#',
+    description:
+      'A fantastic afternoon with the Société Générale team! Colleagues from across the region joined us for a Beach Team Building session designed to challenge, energize, and strengthen collaboration. From engaging team exercises to problem-solving challenges, everyone brought their best. We concluded the day with a BBQ buffet and awards, celebrating achievements and creating lasting memories. At IGNITE, we create experiences that build stronger teams and meaningful connections. #TeamBuilding #EmployeeEngagement #Collaboration',
+  },
+  {
+    date: 'January 16, 2026',
+    title: 'Promo Fix',
+    image: '/assets/images/news/promofix.png',
+    // link: 'https://ignite.ae/promo-fix/',
+    link: '#',
+    description:
+      'A fantastic afternoon with the Pro Fix team! Following their team kick-off, we hosted an engaging session filled with energy, collaboration, and meaningful team challenges. It was inspiring to see everyone connect, have fun, and build stronger bonds. We look forward to partnering with this team again and creating more memorable experiences! #TeamBuilding #EmployeeEngagement #Collaboration',
+  },
+  {
+    date: 'January 08, 2026',
+    title: 'Trust Wallet',
+    image: '/assets/images/news/Turst_Wallet-scaled.jpg',
+    // link: 'https://ignite.ae/trust-wallet/',
+    link: '#',
+    description:
+      'We had a fantastic afternoon with the senior team from Trust Wallet. Brilliant energy, strong engagement, and great vibes all around, it was a pleasure working with such a dynamic team. We look forward to working with them again soon!',
+  },
+  {
+    date: 'December 18, 2025',
+    title: 'Facecard Team',
+    image: '/assets/images/news/Face-group-shot-18.12.25-scaled.jpg',
+    // link: 'https://ignite.ae/facecard-team/',
+    link: '#',
+    description:
+      'We loved closing the year with the Facecard team in full festive spirit! From energizing yoga and Zumba sessions, to refreshing ice plunges, standup paddleboarding, kayaking, and a healthy breakfast to fuel it all – we made the most of the season together. And of course, a special surprise visit from Santa Claus and his helper added the perfect festive touch!',
+  },
+  {
+    date: 'November 26, 2025',
+    title: 'DNV Team',
+    image: '/assets/images/news/DNV-Group-Shot-2025-scaled.jpg',
+    // link: 'https://ignite.ae/dnv-team/',
+    link: '#',
+    description:
+      'We had an incredible time with the DNV team, supporting their Wellness Day at JA Resort. The energy they bring is truly unmatched, two hours of constant enthusiasm, positivity, and engagement. Working with this team never feels like work; they lift the entire experience. Thank you once again for your trust and partnership. We look forward to creating even more impactful moments together in 2026.',
+  },
+  {
+    date: 'October 20, 2025',
+    title: 'A Wonderful Morning With The Emirates Facecard Team',
+    image: '/assets/images/news/Emirates-Facecard-Oct-20th-scaled.jpg',
+    // link: 'https://ignite.ae/a-wonderful-morning-spent-with-the-emirates-facecard-team/',
+    link: '#',
+    description:
+      'We started the session with a sensual beach yoga class, followed by invigorating ice plunges and stand-up paddleboarding to soak up some vitamin sea. The morning concluded with a beautiful breakfast on the RIVA terrace, where the team could relax, unwind, and also choose to continue enjoying the services of IGNITE Water Sports. A perfect blend of wellness, recovery, and connection by the beach.',
+  },
+];
+
 export default function Home() {
   const [wordIdx, setWordIdx] = useState(0);
   const [wordVisible, setWordVisible] = useState(true);
@@ -263,6 +389,108 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="brands-section">
+        <div className="brands-heading">
+          <span>Our Clients</span>
+        </div>
+
+        <div className="brands-marquee">
+          <div className="brands-track">
+
+            <div className="brands-group">
+              {BRANDS.map((brand, index) => (
+                <div className="brand-item" key={`brand-a-${index}`}>
+                  <img
+                    src={brand.image}
+                    alt={brand.name}
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+
+            <div className="brands-group" aria-hidden="true">
+              {BRANDS.map((brand, index) => (
+                <div className="brand-item" key={`brand-b-${index}`}>
+                  <img
+                    src={brand.image}
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section className="latest-news-section">
+        <div className="latest-news-header">
+          <div>
+            <p className="news-eyebrow">Latest news</p>
+
+            <h2 className="news-heading">
+              What we've been <span>up to.</span>
+            </h2>
+          </div>
+
+        </div>
+
+        <div className="news-carousel">
+          {LATEST_NEWS.map((item, index) => (
+            <article className="news-card" key={item.title}>
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="news-card-image"
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  loading="lazy"
+                />
+
+                <div className="news-image-shade" />
+
+                <span className="news-card-number">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+              </a>
+
+              <div className="news-card-content">
+                <div className="news-card-date">
+                  {item.date}
+                </div>
+
+                <h3>
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {item.title}
+                  </a>
+                </h3>
+
+                <p>{item.description}</p>
+
+                {/* <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="news-card-link"
+                >
+                  Discover
+                  <span>↗</span>
+                </a> */}
               </div>
             </article>
           ))}
