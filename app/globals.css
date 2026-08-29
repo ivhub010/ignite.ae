@@ -2535,7 +2535,7 @@ button{font-family:inherit}
 
   color: #fff;
 
-  font-size: clamp(40px, 5vw, 72px);
+  font-size: clamp(40px, 3vw, 72px);
   line-height: 0.98;
 
   font-weight: 700;
