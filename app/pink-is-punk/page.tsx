@@ -17,6 +17,8 @@ const PINK_EVENTS = [
     text: 'Put on your pink kit and join the community for an energetic Swim:Run experience.',
     image: '/assets/images/pink-is-punk/swim-run.png',
     link: 'https://www.premieronline.com/event/ignite_pink_is_punk_swim_run_7754',
+    viewphotos: 'https://www.dropbox.com/scl/fo/m9m9jl2mg6kdcw8ia72v1/AEbZWuDrCJ7U_8dY3iqbyDY?rlkey=83zifnulx0n0tm0iamaiv4voi&st=ccbjb375&dl=0',
+    viewvideos: 'https://www.instagram.com/reel/DP1C4zAj_w-/?utm_source=ig_web_copy_link&igsh=ZzBjaG5jcHByemNk'
   },
   {
     title: 'Pink is Punk Moonlit Yoga',
@@ -24,6 +26,8 @@ const PINK_EVENTS = [
     text: 'Join us for a calming outdoor yoga experience focused on movement, connection and community.',
     image: '/assets/images/pink-is-punk/moonlit-yoga.png',
     link: 'https://www.premieronline.com/event/ignite_pink_is_punk_moonlit_yoga_7756',
+    viewphotos: 'https://www.dropbox.com/scl/fo/fy1vw2jinxsx1psjjpjl4/AMm62UfpB8kNSaNaYIsJpMs?rlkey=jf3twc6h1xx1aszqu4asoael3&dl=0',
+    viewvideos: 'https://www.instagram.com/reel/DP3g7AaD0aq/?utm_source=ig_web_copy_link&igsh=MXdydTk4dTVuZWw1MQ=='
   },
   {
     title: 'Pink is Punk Pink Paddle',
@@ -31,6 +35,80 @@ const PINK_EVENTS = [
     text: 'Take to the water and paddle with us in support of the Pink is Punk campaign.',
     image: '/assets/images/pink-is-punk/pink-paddle.png',
     link: 'https://www.premieronline.com/event/ignite_pink_is_punk_pink_paddle_7755',
+    viewphotos: 'https://www.dropbox.com/scl/fo/gmm4req28g4luz8r92t63/AHqDDufwZT_rkscxLhR-vyk?rlkey=5jeadlhuq5mjcmgvjl0eqnxcf&st=um3xpb8p&dl=0',
+    viewvideos: 'https://www.instagram.com/reel/DQLpae4D66f/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='
+  },
+];
+
+const PARTNER_GROUPS = [
+  {
+    type: 'featured',
+    title: 'Charity',
+    items: [
+      {
+        name: 'Al Jalila Foundation',
+        image: '/assets/images/pink-is-punk/partners/al-jalila-foundation.png',
+      },
+    ],
+  },
+  {
+    type: 'featured',
+    title: 'Title Sponsor',
+    items: [
+      {
+        name: 'Medcare',
+        image: '/assets/images/pink-is-punk/partners/medcare.png',
+      },
+    ],
+  },
+  {
+    title: 'Communications',
+    items: [
+      {
+        name: 'Communications Partners',
+        image: '/assets/images/pink-is-punk/partners/kpr-all-logos.jpg',
+      },
+    ],
+  },
+  {
+    title: 'Venues',
+    items: [
+      {
+        name: 'Anantara',
+        image: '/assets/images/pink-is-punk/partners/anantara.png',
+      },
+      {
+        name: 'Riva',
+        image: '/assets/images/pink-is-punk/partners/riva.png',
+      },
+    ],
+  },
+];
+
+const SUPPORTING_SPONSORS = [
+  {
+    name: 'Supporting Sponsor 1',
+    image: '/assets/images/pink-is-punk/partners/sponsor-1.png',
+  },
+  {
+    name: 'Supporting Sponsor 2',
+    image: '/assets/images/pink-is-punk/partners/sponsor-2.png',
+  },
+  {
+    name: 'Supporting Sponsor 3',
+    image: '/assets/images/pink-is-punk/partners/sponsor-3.png',
+  },
+  {
+    name: 'Supporting Sponsor 4',
+    image: '/assets/images/pink-is-punk/partners/sponsor-4.png',
+  },
+  {
+    name: 'TOADS',
+    image: '/assets/images/pink-is-punk/partners/toads.png',
+  },
+  {
+    name: 'Life',
+    image: '/assets/images/pink-is-punk/partners/life.png',
   },
 ];
 
@@ -83,8 +161,8 @@ export default function PinkIsPunk() {
             SEE THE CAMPAIGN
           </Link>
 
-          <Link href="/contact" className="pip-btn pip-btn-outline">
-            SUPPORT 2025 <span>→</span>
+          <Link href="#join-ignite-pink-is-punk" className="pip-btn pip-btn-outline">
+            Join 2026 <span>→</span>
           </Link>
         </div>
 
@@ -199,7 +277,7 @@ export default function PinkIsPunk() {
         <p className="content-body">The premise is simple: wear pink, move your body, and stand with the people fighting breast cancer in our community. Every year we add a new event — a sunrise yoga session, a group swim, a beach boot camp — all under the Pink is Punk banner.</p>
       </section> */}
 
-      <section className="pink-events-section">
+      <section className="pink-events-section" id='join-ignite-pink-is-punk'>
         <div className="pink-events-inner">
 
           <div className="pink-events-header">
@@ -210,12 +288,12 @@ export default function PinkIsPunk() {
 
               <h2 className="pink-events-heading">
                 Join the movement.
-                <span> Choose your event.</span>
+                <span> IGNITE Pink is Punk 2026</span>
               </h2>
             </div>
 
             <p className="pink-events-intro">
-              Take part in IGNITE Pink is Punk and help support a community
+              Take part in <b>IGNITE Pink is Punk 2026</b> and help support a community
               united through movement and purpose.
             </p>
           </div>
@@ -254,6 +332,26 @@ export default function PinkIsPunk() {
                   <p>{event.text}</p>
 
                   <a
+                    href={event.viewphotos}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="pink-event-link"
+                  >
+                    View 2025 Photos
+                    <span>↗</span>
+                  </a>
+
+                  <a
+                    href={event.viewvideos}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="pink-event-link"
+                  >
+                    View 2025 Videos
+                    <span>↗</span>
+                  </a>
+
+                  <a
                     href={event.link}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -271,19 +369,103 @@ export default function PinkIsPunk() {
         </div>
       </section>
 
-      <section className="content-block dark">
-        <p className="content-label" style={{ color: '#CE00A0' }}>How to get involved</p>
-        <h2 className="content-lead">Join us in October 2025.</h2>
-        <div className="card-grid">
-          {WAYS.map(([t, d]) => (
-            <div key={t} className="card">
-              <h3 className="card-title">{t}</h3>
-              <p className="card-body">{d}</p>
+      <section className="pink-partners-section">
+        <div className="pink-partners-inner">
+
+          <div className="pink-events-header">
+            <div>
+              <p className="pink-events-eyebrow">
+                Our Partners
+              </p>
+
+              <h2 className="pink-events-heading">
+                Powered by people who
+                <span> believe in the cause.</span>
+              </h2>
             </div>
-          ))}
-        </div>
-        <div style={{ marginTop: 48 }}>
-          <Link href="/contact" className="btn-primary" style={{ background: '#CE00A0', color: '#fff' }}>Register your team</Link>
+
+            <p className="pink-events-intro">
+              IGNITE Pink is Punk is made possible with the support of our charity,
+              sponsors, communications partners and venues.
+            </p>
+          </div>
+
+
+          <div className="pink-partners-featured">
+            {PARTNER_GROUPS.slice(0, 2).map(group => (
+              <article
+                className="pink-partner-featured-card"
+                key={group.title}
+              >
+                <div className="pink-partner-category">
+                  {group.title}
+                </div>
+
+                <div className="pink-partner-featured-logo">
+                  <img
+                    src={group.items[0].image}
+                    alt={group.items[0].name}
+                  />
+                </div>
+              </article>
+            ))}
+          </div>
+
+
+          <div className="pink-partner-secondary-grid">
+            {PARTNER_GROUPS.slice(2).map(group => (
+              <article
+                className="pink-partner-group-card"
+                key={group.title}
+              >
+                <div className="pink-partner-category">
+                  {group.title}
+                </div>
+
+                <div
+                  className={`pink-partner-group-logos ${
+                    group.items.length > 1 ? 'multiple' : ''
+                  }`}
+                >
+                  {group.items.map(item => (
+                    <div
+                      className="pink-partner-logo-box"
+                      key={item.name}
+                    >
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+
+
+          <div className="pink-supporting">
+            <div className="pink-supporting-header">
+              <span>Supporting Sponsors</span>
+              <div />
+            </div>
+
+            <div className="pink-supporting-grid">
+              {SUPPORTING_SPONSORS.map(sponsor => (
+                <div
+                  className="pink-supporting-logo"
+                  key={sponsor.name}
+                >
+                  <img
+                    src={sponsor.image}
+                    alt={sponsor.name}
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
         </div>
       </section>
     </main>
