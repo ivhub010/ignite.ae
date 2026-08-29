@@ -12,7 +12,7 @@ export default function SiteFooter() {
             <p className="footer-about">wellness in motion. contributing to the quality of life of our community by encouraging healthy lifestyle habits and movement. Dubai, UAE · Since 2007.</p>
           </div>
           <div>
-            <p className="footer-heading">Divisions</p>
+            <p className="footer-heading">Associate Links</p>
             <ul className="footer-links">
               {DIVISIONS.map(d => (
                 <li key={d.label}>

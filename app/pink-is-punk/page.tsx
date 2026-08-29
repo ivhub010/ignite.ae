@@ -99,32 +99,6 @@ export default function PinkIsPunk() {
             </ul>
           </div>
 
-          <p>
-            We witnessed exceptional participation, energy, and commitment from
-            partners, supporters, and the wider UAE community.
-          </p>
-
-          <p>
-            This collective effort reflects the power of unity, movement, and
-            shared purpose in driving meaningful impact. We extend our sincere
-            appreciation to all our partners, sponsors, and participants for
-            standing with us and helping create real change.
-          </p>
-
-          <div className="pink-campaign-permit">
-            <span>IACAD Permit</span>
-            <strong>PRHCE-004691180</strong>
-          </div>
-
-          <a
-            href="https://www.youtube.com/watch?v=0k6vQakH-LM"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="pink-campaign-cta"
-          >
-            IGNITE Pink is Punk Campaign video 2024
-            <span>↗</span>
-          </a>
         </div>
 
 
@@ -160,8 +134,38 @@ export default function PinkIsPunk() {
           </div> */}
 
         </div>
-
       </div>
+
+      <div className="pink-campaign-inner" style={{ display: 'block' }}>
+          <div className="pink-campaign-content" style={{ maxWidth: '100%' }}>
+            <p>
+              We witnessed exceptional participation, energy, and commitment from
+              partners, supporters, and the wider UAE community.
+            </p>
+
+            <p>
+              This collective effort reflects the power of unity, movement, and
+              shared purpose in driving meaningful impact. We extend our sincere
+              appreciation to all our partners, sponsors, and participants for
+              standing with us and helping create real change.
+            </p>
+
+            <div className="pink-campaign-permit">
+              <span>IACAD Permit</span>
+              <strong>PRHCE-004691180</strong>
+            </div>
+
+            <a
+              href="https://www.youtube.com/watch?v=0k6vQakH-LM"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pink-campaign-cta"
+            >
+              IGNITE Pink is Punk Campaign video 2024
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
     </section>
 
       <section id="campaign" className="content-block">
