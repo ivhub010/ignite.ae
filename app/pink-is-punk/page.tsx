@@ -390,7 +390,6 @@ export default function PinkIsPunk() {
             </p>
           </div>
 
-
           <div className="pink-partners-featured">
             {PARTNER_GROUPS.slice(0, 2).map(group => (
               <article
