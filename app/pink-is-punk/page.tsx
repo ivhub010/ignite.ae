@@ -66,7 +66,7 @@ const PARTNER_GROUPS = [
     items: [
       {
         name: 'Communications Partners',
-        image: '/assets/images/pink-is-punk/partners/kpr-all-logos.jpg',
+        image: '/assets/images/pink-is-punk/partners/KPR.png',
       },
     ],
   },
@@ -75,7 +75,7 @@ const PARTNER_GROUPS = [
     items: [
       {
         name: 'Anantara',
-        image: '/assets/images/pink-is-punk/partners/anantara.png',
+        image: '/assets/images/pink-is-punk/partners/anantara.jpg',
       },
       {
         name: 'Riva',
@@ -108,7 +108,7 @@ const SUPPORTING_SPONSORS = [
   },
   {
     name: 'Life',
-    image: '/assets/images/pink-is-punk/partners/life.png',
+    image: '/assets/images/pink-is-punk/partners/life.jpg',
   },
 ];
 
