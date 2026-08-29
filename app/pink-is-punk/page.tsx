@@ -68,6 +68,102 @@ export default function PinkIsPunk() {
 
     </section>
 
+    <section className="pink-campaign-section">
+      <div className="pink-campaign-inner">
+
+        <div className="pink-campaign-content">
+          <p className="pink-campaign-eyebrow">
+            Community Impact
+          </p>
+
+          <h2 className="pink-campaign-title">
+            IGNITE Pink is Punk 2025:
+            <span> United in Movement. United in Purpose.</span>
+          </h2>
+
+          <p className="pink-campaign-lead">
+            We are proud to share that this year’s IGNITE Pink is Punk campaign
+            raised an outstanding <strong>AED 111,858</strong> in support of
+            Al Jalila Foundation breast cancer research and treatment initiatives.
+          </p>
+
+          <div className="pink-campaign-events">
+            <div className="pink-campaign-events-title">
+              Across three community driven events
+            </div>
+
+            <ul>
+              <li>Pink is Punk Swim:Run</li>
+              <li>Pink Moonlit Yoga</li>
+              <li>Pink Paddle</li>
+            </ul>
+          </div>
+
+          <p>
+            We witnessed exceptional participation, energy, and commitment from
+            partners, supporters, and the wider UAE community.
+          </p>
+
+          <p>
+            This collective effort reflects the power of unity, movement, and
+            shared purpose in driving meaningful impact. We extend our sincere
+            appreciation to all our partners, sponsors, and participants for
+            standing with us and helping create real change.
+          </p>
+
+          <div className="pink-campaign-permit">
+            <span>IACAD Permit</span>
+            <strong>PRHCE-004691180</strong>
+          </div>
+
+          <a
+            href="https://www.youtube.com/watch?v=0k6vQakH-LM"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="pink-campaign-cta"
+          >
+            IGNITE Pink is Punk Campaign video 2024
+            <span>↗</span>
+          </a>
+        </div>
+
+
+        <div className="pink-campaign-gallery">
+
+          <div className="pink-campaign-main-image">
+            <img
+              src="/assets/images/ignite.ae-8-600x300.png"
+              alt="IGNITE Pink is Punk campaign"
+            />
+
+            <div className="pink-campaign-image-badge">
+              Pink is Punk
+            </div>
+          </div>
+
+          {/* <div className="pink-campaign-sub-grid">
+
+            <div className="pink-campaign-sub-image pink-logo-card">
+              <img
+                src="/assets/images/pink-is-punk/Pink-is-Punk-logo-original-1.jpg"
+                alt="Pink is Punk"
+              />
+            </div>
+
+            <div className="pink-campaign-sub-image iacad-card">
+              <img
+                src="/assets/images/pink-is-punk/iacad.png"
+                alt="IACAD"
+              />
+            </div>
+
+          </div> */}
+
+        </div>
+
+      </div>
+    </section>
+
       <section id="campaign" className="content-block">
         <p className="content-label" style={{ color: '#CE00A0' }}>The campaign</p>
         <h2 className="content-lead">Awareness through action.</h2>

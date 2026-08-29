@@ -237,6 +237,12 @@ export default function Home() {
   const statsRef = useRef<HTMLElement>(null);
   const [counts, setCounts] = useState([2010, 0, 0, 0]);
 
+  const [playVideo, setPlayVideo] = useState(false);
+
+  // Put your YouTube video ID here later
+  const youtubeId = '0k6vQakH-LM';
+
+
   useEffect(() => {
     const t = setInterval(() => {
       setWordVisible(false);
@@ -304,7 +310,7 @@ export default function Home() {
     <main>
       <section className="hero">
         <div className="hero-bg">
-          <img src="/assets/images/IGNITE-Fitness-Wellness.png" alt="" />
+          <img src="/assets/images/pip-1743.jpg" alt="" />
           <div className="hero-bg-overlay" />
         </div>
         <div className="hero-left">
@@ -342,6 +348,101 @@ export default function Home() {
           <div className="stat-tile"><div className="stat-num">{counts[1]}+</div><div className="stat-label">Years combined experience</div></div>
           <div className="stat-tile"><div className="stat-num">{counts[2].toLocaleString('en-US')}+</div><div className="stat-label">People moved</div></div>
           <div className="stat-tile"><div className="stat-num">{counts[3]}+</div><div className="stat-label">Satisfied clients</div></div>
+        </div>
+      </section>
+
+      <section className="pink-punk-section">
+        <div className="pink-punk-inner">
+          <div className="pink-punk-content">
+            <p className="pink-punk-eyebrow">
+              Community Impact
+            </p>
+
+            <h2 className="pink-punk-title">
+              IGNITE Pink is Punk <span>2024</span>
+            </h2>
+
+            <p className="pink-punk-intro">
+              <strong>IGNITE Pink is Punk 2025:</strong>{' '}
+              United in Movement. United in Purpose.
+            </p>
+
+            <p>
+              We are proud to share that this year’s IGNITE Pink is Punk
+              campaign raised an outstanding AED 111,858 in support of Al Jalila
+              Foundation breast cancer research and treatment initiatives.
+            </p>
+
+            <div className="pink-punk-events">
+              <p>Across three community driven events</p>
+
+              <ul>
+                <li>Pink is Punk Swim:Run</li>
+                <li>Pink Moonlit Yoga</li>
+                <li>Pink Paddle</li>
+              </ul>
+            </div>
+
+            <p>
+              We witnessed exceptional participation, energy, and commitment
+              from partners, supporters, and the wider UAE community.
+            </p>
+
+            <p>
+              This collective effort reflects the power of unity, movement, and
+              shared purpose in driving meaningful impact. We extend our sincere
+              appreciation to all our partners, sponsors, and participants for
+              standing with us and helping create real change.
+            </p>
+
+            <div className="pink-punk-permit">
+              IACAD Permit: PRHCE-004691180
+            </div>
+
+            <Link className="pink-punk-link" href="/pink-is-punk">Read More<span>↗</span></Link>
+          </div>
+
+          <div className="pink-punk-media">
+            {!playVideo ? (
+              <button
+                  type="button"
+                  className="pink-punk-video-poster"
+                  onClick={() => setPlayVideo(true)}
+                  aria-label="Play Pink is Punk video"
+                  style={{
+                    backgroundImage: `url(https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg)`,
+                  }}
+                >
+                  <div className="pink-punk-video-overlay" />
+
+                  <div className="pink-punk-video-label">
+                    Watch the story
+                  </div>
+
+                  <div className="pink-punk-play">
+                    <span />
+                  </div>
+
+                  <div className="pink-punk-video-footer">
+                    <span>IGNITE Pink is Punk</span>
+                    <span>Play video</span>
+                  </div>
+                </button>
+            ) : youtubeId ? (
+              <div className="pink-punk-video-frame">
+                <iframe
+                  src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0`}
+                  title="IGNITE Pink is Punk"
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            ) : (
+              <div className="pink-punk-video-placeholder">
+                Add your YouTube ID to play the video.
+              </div>
+            )}
+          </div>
         </div>
       </section>
 

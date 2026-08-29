@@ -9,7 +9,7 @@ export default function SiteFooter() {
         <div className="footer-wordmark">IGNITE</div>
         <div className="footer-grid">
           <div>
-            <p className="footer-about">wellness in motion. — contributing to the quality of life of our community by encouraging healthy lifestyle habits and movement. Dubai, UAE · Since 2007.</p>
+            <p className="footer-about">wellness in motion. contributing to the quality of life of our community by encouraging healthy lifestyle habits and movement. Dubai, UAE · Since 2007.</p>
           </div>
           <div>
             <p className="footer-heading">Divisions</p>
