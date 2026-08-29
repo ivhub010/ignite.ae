@@ -383,23 +383,6 @@ export default function Home() {
               </ul>
             </div>
 
-            <p>
-              We witnessed exceptional participation, energy, and commitment
-              from partners, supporters, and the wider UAE community.
-            </p>
-
-            <p>
-              This collective effort reflects the power of unity, movement, and
-              shared purpose in driving meaningful impact. We extend our sincere
-              appreciation to all our partners, sponsors, and participants for
-              standing with us and helping create real change.
-            </p>
-
-            <div className="pink-punk-permit">
-              IACAD Permit: PRHCE-004691180
-            </div>
-
-            <Link className="pink-punk-link" href="/pink-is-punk">Read More<span>↗</span></Link>
           </div>
 
           <div className="pink-punk-media">
@@ -443,7 +426,31 @@ export default function Home() {
               </div>
             )}
           </div>
+
         </div>
+
+        <div className="pink-punk-inner" style={{ display: 'block' }}>
+          <div className="pink-punk-content" style={{ maxWidth: '100%' }}>
+            <p>
+              We witnessed exceptional participation, energy, and commitment
+              from partners, supporters, and the wider UAE community.
+            </p>
+
+            <p>
+              This collective effort reflects the power of unity, movement, and
+              shared purpose in driving meaningful impact. We extend our sincere
+              appreciation to all our partners, sponsors, and participants for
+              standing with us and helping create real change.
+            </p>
+
+            <div className="pink-punk-permit">
+              IACAD Permit: PRHCE-004691180
+            </div>
+
+            <Link className="pink-punk-link" href="/pink-is-punk">Read More<span>↗</span></Link>
+          </div>
+        </div>
+
       </section>
 
       <section className="testimonial-section">

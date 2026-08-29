@@ -79,7 +79,7 @@ button{font-family:inherit}
 .hero-eyebrow{font:600 10px/1 var(--font-inter),sans-serif;text-transform:uppercase;letter-spacing:.2em;color:rgba(255,255,255,.35);margin-bottom:20px}
 .hero-display{font:900 italic clamp(52px,7.5vw,110px)/1 var(--font-archivo),sans-serif;letter-spacing:-.03em;color:#fff}
 .hero-word{color:var(--lime);display:block;overflow:hidden}
-.hero-sub{font:400 clamp(14px,1.4vw,17px)/1.7 var(--font-inter),sans-serif;color:rgba(255,255,255,.5);max-width:420px;margin:28px 0 36px}
+.hero-sub{font:400 clamp(14px,1.4vw,17px)/1.7 var(--font-inter),sans-serif;color:rgba(255,255,255,.5);max-width:500px;margin:28px 0 36px}
 .hero-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
 .hero-stats{display:flex;gap:32px;margin-top:48px;padding-top:32px;border-top:1px solid rgba(255,255,255,.08);flex-wrap:wrap}
 .hero-stat-num{font:700 italic clamp(20px,2.5vw,32px)/1 var(--font-archivo),sans-serif;color:var(--lime)}
@@ -1369,7 +1369,7 @@ button{font-family:inherit}
 
   gap: clamp(60px, 7vw, 110px);
 
-  align-items: center;
+  align-items: flex-start;
 }
 
 
