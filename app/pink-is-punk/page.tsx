@@ -10,6 +10,30 @@ const WAYS = [
   ['Sponsor the campaign', 'Partner with IGNITE and Al Jalila Foundation to amplify your brand\'s impact.'],
 ];
 
+const PINK_EVENTS = [
+  {
+    title: 'Pink is Punk Swim:Run',
+    shortTitle: 'Swim:Run',
+    text: 'Put on your pink kit and join the community for an energetic Swim:Run experience.',
+    image: '/assets/images/pink-is-punk/swim-run.png',
+    link: 'https://www.premieronline.com/event/ignite_pink_is_punk_swim_run_7754',
+  },
+  {
+    title: 'Pink is Punk Moonlit Yoga',
+    shortTitle: 'Moonlit Yoga',
+    text: 'Join us for a calming outdoor yoga experience focused on movement, connection and community.',
+    image: '/assets/images/pink-is-punk/moonlit-yoga.png',
+    link: 'https://www.premieronline.com/event/ignite_pink_is_punk_moonlit_yoga_7756',
+  },
+  {
+    title: 'Pink is Punk Pink Paddle',
+    shortTitle: 'Pink Paddle',
+    text: 'Take to the water and paddle with us in support of the Pink is Punk campaign.',
+    image: '/assets/images/pink-is-punk/pink-paddle.png',
+    link: 'https://www.premieronline.com/event/ignite_pink_is_punk_pink_paddle_7755',
+  },
+];
+
 export default function PinkIsPunk() {
   return (
     <main>
@@ -168,11 +192,83 @@ export default function PinkIsPunk() {
         </div>
     </section>
 
-      <section id="campaign" className="content-block">
+      {/* <section id="campaign" className="content-block">
         <p className="content-label" style={{ color: '#CE00A0' }}>The campaign</p>
         <h2 className="content-lead">Awareness through action.</h2>
         <p className="content-body">Pink is Punk started in 2018 with a single run on Dubai Marina Walk. What began as a small community event has grown into one of the UAE&rsquo;s most recognised annual wellness campaigns, drawing thousands of participants each October and raising significant funds for breast cancer research and support at Al Jalila Foundation.</p>
         <p className="content-body">The premise is simple: wear pink, move your body, and stand with the people fighting breast cancer in our community. Every year we add a new event — a sunrise yoga session, a group swim, a beach boot camp — all under the Pink is Punk banner.</p>
+      </section> */}
+
+      <section className="pink-events-section">
+        <div className="pink-events-inner">
+
+          <div className="pink-events-header">
+            <div>
+              <p className="pink-events-eyebrow">
+                How to get involved
+              </p>
+
+              <h2 className="pink-events-heading">
+                Join the movement.
+                <span> Choose your event.</span>
+              </h2>
+            </div>
+
+            <p className="pink-events-intro">
+              Take part in IGNITE Pink is Punk and help support a community
+              united through movement and purpose.
+            </p>
+          </div>
+
+
+          <div className="pink-events-grid">
+            {PINK_EVENTS.map((event, index) => (
+              <article className="pink-event-card" key={event.title}>
+
+                <a
+                  href={event.link}
+                  className="pink-event-image"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={event.image}
+                    alt={event.title}
+                  />
+
+                  <div className="pink-event-overlay" />
+
+                  {/* <span className="pink-event-number">
+                    {String(index + 1).padStart(2, '0')}
+                  </span> */}
+
+                  <span className="pink-event-image-title">
+                    {event.shortTitle}
+                  </span>
+                </a>
+
+
+                <div className="pink-event-content">
+                  {/* <h3>{event.title}</h3> */}
+
+                  <p>{event.text}</p>
+
+                  <a
+                    href={event.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="pink-event-link"
+                  >
+                    Register Now
+                    <span>↗</span>
+                  </a>
+                </div>
+
+              </article>
+            ))}
+          </div>
+
+        </div>
       </section>
 
       <section className="content-block dark">

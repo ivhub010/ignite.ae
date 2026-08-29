@@ -173,6 +173,7 @@ const BRANDS = [
   { name: "Stolt Nielsen", image: "/assets/images/brands/stolt-nielsen.png" },
 ];
 
+
 const LATEST_NEWS = [
   {
     date: 'February 13, 2026',
