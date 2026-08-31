@@ -12,7 +12,7 @@ const WAYS = [
 
 const PINK_EVENTS = [
   {
-    shortTitle: 'Pink is Punk Swim:Run',
+    shortTitle: 'Pink is Punk Swim:Run - Oct 3rd',
     title: 'Oct 3rd',
     text: 'Put on your pink kit and join the community for an energetic Swim:Run experience.',
     image: '/assets/images/pink-is-punk/swim-run.png',
@@ -21,7 +21,7 @@ const PINK_EVENTS = [
     viewvideos: 'https://www.instagram.com/reel/DP1C4zAj_w-/?utm_source=ig_web_copy_link&igsh=ZzBjaG5jcHByemNk'
   },
   {
-    shortTitle: 'Pink is Punk Moonlit Yoga',
+    shortTitle: 'Pink is Punk Moonlit Yoga - Oct 5th',
     title: 'Oct 5th',
     text: 'Join us for a calming outdoor yoga experience focused on movement, connection and community.',
     image: '/assets/images/pink-is-punk/moonlit-yoga.png',
@@ -30,7 +30,7 @@ const PINK_EVENTS = [
     viewvideos: 'https://www.instagram.com/reel/DP3g7AaD0aq/?utm_source=ig_web_copy_link&igsh=MXdydTk4dTVuZWw1MQ=='
   },
   {
-    shortTitle: 'Pink is Punk Pink Paddle',
+    shortTitle: 'Pink is Punk Pink Paddle - Oct 10th',
     title: 'Oct 10th',
     text: 'Take to the water and paddle with us in support of the Pink is Punk campaign.',
     image: '/assets/images/pink-is-punk/pink-paddle.png',
@@ -327,7 +327,7 @@ export default function PinkIsPunk() {
 
 
                 <div className="pink-event-content">
-                  <h3>{event.title}</h3>
+                  {/* <h3>{event.title}</h3> */}
 
                   <p>{event.text}</p>
 
