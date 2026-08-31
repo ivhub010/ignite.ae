@@ -327,7 +327,7 @@ export default function PinkIsPunk() {
 
 
                 <div className="pink-event-content">
-                  {/* <h3>{event.title}</h3> */}
+                  <h3>{event.title}</h3>
 
                   <p>{event.text}</p>
 
