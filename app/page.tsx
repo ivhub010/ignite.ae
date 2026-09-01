@@ -236,7 +236,7 @@ export default function Home() {
   const [wordVisible, setWordVisible] = useState(true);
 
   const statsRef = useRef<HTMLElement>(null);
-  const [counts, setCounts] = useState([2010, 0, 0, 0]);
+  const [counts, setCounts] = useState([2007, 0, 0, 0]);
 
   const [playVideo, setPlayVideo] = useState(false);
 

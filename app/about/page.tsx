@@ -7,9 +7,9 @@ export const metadata: Metadata = { title: 'Who we are' };
 
 const NUMBERS = [
   ['2007', 'Established'],
-  ['17+', 'Years experience'],
+  ['60+', 'Years combined experience'],
   ['10k+', 'People moved'],
-  ['500+', 'Satisfied clients'],
+  ['2500+', 'Satisfied clients'],
 ];
 
 const TIMELINE = [
@@ -39,7 +39,7 @@ export default function About() {
               <p className="about-meta-value">Contributing to the quality of life of our community by encouraging healthy lifestyle habits and movement.</p>
             </div>
             <div className="about-meta-item">
-              <p className="about-meta-label">Divisions</p>
+              <p className="about-meta-label">Services</p>
               <p className="about-meta-value">Fitness, Corporate, Team Building, Water Sports, Kids, Consultancy, Surface, Homespa</p>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function About() {
 
       <section className="divs-section">
         <div className="divs-header">
-          <p className="divs-sidebar-label">Our divisions</p>
+          <p className="divs-sidebar-label">Our services</p>
           <h2 className="divs-heading">Eight ways to move.</h2>
         </div>
         <div>

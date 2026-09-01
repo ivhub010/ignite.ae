@@ -163,13 +163,16 @@ button{font-family:inherit}
 .number-val{font:900 italic clamp(44px,6vw,80px)/1 var(--font-archivo),sans-serif;color:#0F1923;letter-spacing:-.02em}
 .number-lbl{font:600 9px/1.4 var(--font-inter),sans-serif;text-transform:uppercase;letter-spacing:.14em;color:rgba(15,25,35,.5);margin-top:8px}
 
-.story-section{padding:clamp(80px,10vw,140px) clamp(32px,6vw,100px);display:grid;grid-template-columns:1fr 2fr;gap:clamp(48px,6vw,100px)}
-.story-sidebar-label,.tl-label,.divs-sidebar-label{font:600 10px/1 var(--font-inter),sans-serif;text-transform:uppercase;letter-spacing:.2em;color:var(--lime);padding-top:8px}
+/* .story-section{padding:clamp(80px,10vw,140px) clamp(32px,6vw,100px);display:grid;grid-template-columns:1fr 2fr;gap:clamp(48px,6vw,100px)} */
+.story-section{ display: block;padding:clamp(80px,10vw,140px) clamp(32px,6vw,100px); }
+.story-sidebar-label,.tl-label,.divs-sidebar-label{font:600 10px/1 var(--font-inter),sans-serif;text-transform:uppercase;letter-spacing:.22em;color:var(--lime);margin-bottom:20px;display:flex;align-items:center;gap:12px}
+.story-sidebar-label::before,.tl-label::before,.divs-sidebar-label::before{content:'';width:28px;height:2px;background:var(--lime)}
 .story-lead{font:700 italic clamp(28px,4vw,52px)/1.15 var(--font-archivo),sans-serif;color:#fff;margin-bottom:36px}
-.story-body{font:400 16px/1.8 var(--font-inter),sans-serif;color:rgba(255,255,255,.5);max-width:680px;margin-top:20px}
+.story-body{font:400 16px/1.8 var(--font-inter),sans-serif;color:rgba(255,255,255,.5);margin-top:20px} /*max-width:680px;*/
 
 .timeline-section{padding:clamp(80px,10vw,140px) clamp(32px,6vw,100px);background:#0a1018}
-.tl-header,.divs-header{display:grid;grid-template-columns:1fr 2fr;gap:clamp(48px,6vw,100px);margin-bottom:clamp(48px,6vw,80px)}
+/* .tl-header,.divs-header{display:grid;grid-template-columns:1fr 2fr;gap:clamp(48px,6vw,100px);margin-bottom:clamp(48px,6vw,80px)} */
+.tl-header,.divs-header{display:block;margin-bottom:clamp(48px,6vw,80px)}
 .tl-heading,.divs-heading{font:700 italic clamp(28px,4vw,52px)/1.1 var(--font-archivo),sans-serif;color:#fff}
 .tl-item{display:grid;grid-template-columns:120px 1fr;gap:24px;padding:28px 0;border-bottom:1px solid rgba(255,255,255,.07)}
 .tl-item:first-child{border-top:1px solid rgba(255,255,255,.07)}
