@@ -360,7 +360,7 @@ export default function Home() {
             </p>
 
             <h2 className="pink-punk-title">
-              IGNITE Pink is Punk <span>2024</span>
+              IGNITE Pink is Punk <span>2025</span>
             </h2>
 
             <p className="pink-punk-intro">
@@ -399,9 +399,9 @@ export default function Home() {
                 >
                   <div className="pink-punk-video-overlay" />
 
-                  <div className="pink-punk-video-label">
+                  {/* <div className="pink-punk-video-label">
                     Watch the story
-                  </div>
+                  </div> */}
 
                   <div className="pink-punk-play">
                     <span />
