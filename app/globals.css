@@ -146,7 +146,7 @@ button{font-family:inherit}
 .about-watermark{position:absolute;right:-.05em;top:50%;transform:translateY(-55%);font:900 italic clamp(200px,30vw,420px)/1 var(--font-archivo),sans-serif;color:rgba(255,255,255,.03);letter-spacing:-.04em;pointer-events:none;user-select:none;white-space:nowrap}
 .about-eyebrow{font:600 10px/1 var(--font-inter),sans-serif;text-transform:uppercase;letter-spacing:.22em;color:var(--lime);margin-bottom:20px;display:flex;align-items:center;gap:12px}
 .about-eyebrow::before{content:'';width:28px;height:2px;background:var(--lime)}
-.about-title{font:900 italic clamp(56px,9vw,130px)/.95 var(--font-archivo),sans-serif;color:#fff;letter-spacing:-.03em;max-width:1000px;margin-bottom:40px}
+.about-title{font:900 italic clamp(56px,4vw,130px)/.95 var(--font-archivo),sans-serif;color:#fff;letter-spacing:-.03em;max-width:1000px;margin-bottom:40px}
 .about-title span{color:var(--lime)}
 .about-meta{display:flex;gap:clamp(32px,5vw,80px);padding-top:32px;border-top:1px solid rgba(255,255,255,.1);flex-wrap:wrap}
 .about-meta-item{flex:1;min-width:200px;max-width:280px}
@@ -154,7 +154,7 @@ button{font-family:inherit}
 .about-meta-value{font:400 14px/1.6 var(--font-inter),sans-serif;color:rgba(255,255,255,.55)}
 
 .pullquote{background:#0a1018;padding:clamp(80px,10vw,140px) clamp(32px,6vw,100px);position:relative;overflow:hidden}
-.pullquote-text{font:700 italic clamp(28px,4vw,60px)/1.2 var(--font-archivo),sans-serif;color:#fff;max-width:1000px;position:relative;z-index:1}
+.pullquote-text{font:700 italic clamp(28px,4vw,60px)/1.2 var(--font-archivo),sans-serif;color:#fff;position:relative;z-index:1}
 .pullquote-text em{color:var(--lime);font-style:normal}
 .pullquote-attr{font:500 12px/1 var(--font-inter),sans-serif;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:.14em;margin-top:32px}
 
