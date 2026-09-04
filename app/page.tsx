@@ -325,7 +325,7 @@ export default function Home() {
               transition: 'opacity .4s ease, transform .5s cubic-bezier(.16,1,.3,1)',
             }}>{WORDS[wordIdx]}</span>
           </h1>
-          <p className="hero-sub">IGNITE as a brand started back in 2010 with our fitness arm IGNITE fitness & wellness. From there we have grown and added services along the way with IGNITE Surface, IGNITE corporate wellness, IGNITE team building, IGNITE kids, IGNITE consultancy and Homespa.</p>
+          <p className="hero-sub">IGNITE means to spark, to kick off something new. At any phase of your life, in any context, that spark is available to you. For individuals taking their first step. For teams finding their rhythm. For communities coming together. For cities waking up and moving.</p>
           <div className="hero-actions">
             <a href="#divisions" className="btn-primary">Explore Services</a>
             <Link href="/contact" className="btn-ghost">Talk to us <span style={{ color: '#D2DD29' }}>→</span></Link>

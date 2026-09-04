@@ -8,8 +8,8 @@ const archivo = Archivo({ subsets: ['latin'], weight: ['400','500','700','900'],
 const inter   = Inter({ subsets: ['latin'], weight: ['300','400','500','600','700'], variable: '--font-inter', display: 'swap' });
 
 export const metadata: Metadata = {
-  title: { default: 'IGNITE — wellness in motion.', template: '%s · IGNITE' },
-  description: 'Contributing to the quality of life of our community by encouraging healthy lifestyle habits and movement. Dubai, UAE · Since 2007.',
+  title: { default: 'IGNITE Dubai - Water Sports, Team Building & Corporate Wellness', template: '%s · IGNITE' },
+  description: 'IGNITE is Dubai`s leading active lifestyle brand. Water sports, team building and corporate wellness - trusted by P&G, Deloitte, McKinsey and 90+ leading organisations since 2010.',
 };
 
 export const viewport: Viewport = { themeColor: '#0F1923', width: 'device-width', initialScale: 1 };

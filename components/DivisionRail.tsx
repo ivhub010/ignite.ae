@@ -53,7 +53,7 @@ export default function DivisionRail() {
                       ))}
                     </div>
                     <DivisionLink href={d.href} external={d.external} className="rail-panel-cta" style={{ color: d.color, borderColor: d.color }}>
-                      {d.external ? 'Visit site →' : 'Explore →'}
+                      {d.external ? 'Know More →' : 'Explore →'}
                     </DivisionLink>
                   </div>
                 </div>
@@ -78,7 +78,7 @@ export default function DivisionRail() {
             ))}
           </div>
           <DivisionLink href={current.href} external={current.external} className="rail-panel-cta" style={{ color: current.color, borderColor: current.color, backgroundColor: "rgba(0, 0, 0,0.7)" }}>
-                      {current.external ? 'Visit site →' : 'Explore →'}
+                      {current.external ? 'Know More →' : 'Explore →'}
                     </DivisionLink>
         </div>
       </div>

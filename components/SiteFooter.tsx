@@ -9,7 +9,7 @@ export default function SiteFooter() {
         <div className="footer-wordmark">IGNITE</div>
         <div className="footer-grid">
           <div>
-            <p className="footer-about">wellness in motion. contributing to the quality of life of our community by encouraging healthy lifestyle habits and movement. Dubai, UAE · Since 2007.</p>
+            <p className="footer-about">Dubai's leading active lifestyle brand. Since 2010.</p>
           </div>
           <div>
             <p className="footer-heading">Associate Links</p>
@@ -25,7 +25,7 @@ export default function SiteFooter() {
             <p className="footer-heading">Company</p>
             <ul className="footer-links">
               <li><Link href="/about">About Us</Link></li>
-              <li><Link href="/pink-is-punk">Pink is Punk Event</Link></li>
+              <li><Link href="/pink-is-punk">Pink is Punk</Link></li>
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
@@ -33,7 +33,7 @@ export default function SiteFooter() {
             <p className="footer-heading">Contact</p>
             <a href="tel:+971800446483" className="footer-contact-link">800 IGNITE (446483)</a>
             <a href="mailto:info@ignite.ae" style={{ color: 'rgba(255,255,255,.5)', fontSize: 13, display: 'block', marginTop: 8 }}>info@ignite.ae</a>
-            <a href="https://wa.me/971800446483" style={{ color: '#25D366', fontSize: 13, fontWeight: 600, display: 'block', marginTop: 10 }}>WhatsApp →</a>
+            {/* <a href="https://wa.me/971800446483" style={{ color: '#25D366', fontSize: 13, fontWeight: 600, display: 'block', marginTop: 10 }}>WhatsApp →</a> */}
           </div>
         </div>
         <div className="footer-bottom">

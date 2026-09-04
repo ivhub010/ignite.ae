@@ -48,11 +48,25 @@ export default function SiteNav() {
       <div className="progress-bar" style={{ width: progress + '%' }} />
 
       <nav className={'nav' + (scrolled ? ' scrolled' : '')}>
-        <Link href="/" className="nav-logo">IGNITE</Link>
+        <Link href="/" className="nav-logo"><img src="/assets/logos/Ignite brandmark_RGB_Green_FA.png" alt="" /></Link>
         <div className="nav-right">
           <Link href="/" className="nav-link">Home</Link>
           <Link href="/about" className="nav-link">About</Link>
+          <div className="nav-dropdown">
+            <Link href="#" className="nav-link nav-dropdown-trigger">
+              Services
+              <span className="nav-dropdown-arrow">⌄</span>
+            </Link>
 
+            <div className="nav-dropdown-menu">
+              {DIVISIONS.map(d => (
+                <Link href={d.href} className="nav-dropdown-link">
+                  {d.label}
+                </Link>
+              ))}
+              
+            </div>
+          </div>
           <div className="nav-dropdown">
             <Link href="/events" className="nav-link nav-dropdown-trigger">
               Events
