@@ -6,6 +6,7 @@ export type Division = {
   external?: boolean;
   chips?: string[];
   image?: string;
+  brand?: string;
 };
 
 export const DIVISIONS: Division[] = [
