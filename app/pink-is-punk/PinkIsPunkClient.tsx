@@ -237,13 +237,13 @@ export default function PinkIsPunkClient() {
       <section className="pink-campaign-section">
         <div className="pink-campaign-inner">
           <div className="pink-campaign-content">
-            <p className="pink-campaign-eyebrow">
-              Community Impact
-            </p>
-
             <div className="pip-logo">
               <img src="/assets/images/piplogo.png" alt="" />
             </div>
+            
+            <p className="pink-campaign-eyebrow">
+              Community Impact
+            </p>
 
             <h2 className="pink-campaign-title">
               IGNITE Pink is Punk 2025:
@@ -270,12 +270,12 @@ export default function PinkIsPunkClient() {
             </div>
 
             <a
-              href="https://www.youtube.com/watch?v=0k6vQakH-LM"
+              href="https://www.youtube.com/watch?v=hQHkvVUTx_c"
               target="_blank"
               rel="noopener noreferrer"
               className="pink-campaign-cta"
             >
-              IGNITE Pink is Punk Campaign video 2024
+              IGNITE Pink is Punk Campaign video 2025
               <span>↗</span>
             </a>
           </div>
@@ -331,12 +331,10 @@ export default function PinkIsPunkClient() {
         </h2>
 
         <p className="content-body" style={{maxWidth:'100%'}}>
-          IGNITE Pink is Punk started in 2007 with a simple belief that
-          community, movement and shared purpose can drive real change. Over
-          seventeen years the campaign has grown into the UAE&apos;s most
-          recognised non-profit breast cancer awareness campaign of its kind.
-          Every year, 100% of net proceeds go directly to support breast cancer
-          research, treatment and patient care in the UAE.
+          IGNITE Pink is Punk started in 2007 with a simple belief that community, movement and shared purpose can drive
+          real change. Over nineteen years the campaign has grown into the UAE's most recognised non-profit breast cancer
+          awareness campaign of its kind. Every year, 100% of net proceeds go directly to support breast cancer research,
+          treatment and patient care in the UAE.
         </p>
 
         <div className="stats-grid">

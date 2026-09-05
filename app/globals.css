@@ -369,12 +369,12 @@ button{font-family:inherit}
 
 .pink-campaign-content {
   img{
-    max-width: 50%;
+    max-width: 160px;
     margin-bottom: 10px;
     border-radius: 3px;
 
     @media(max-width:767px){
-      max-width: 30%;
+      max-width: 120px;
     }
   }
 }
@@ -2710,7 +2710,7 @@ button{font-family:inherit}
 
   color: #fff;
 
-  font-size: 27px;
+  font-size: 24px;
   line-height: 1;
 
   font-weight: 700;
@@ -3238,7 +3238,8 @@ button{font-family:inherit}
   object-fit: contain;
   max-width: 25%;
   position: relative;
-  background: rgba(255, 255, 255, 0.8);
+  /* background: rgba(255, 255, 255, 0.8); */
+  filter: drop-shadow(0 4px 8px rgba(255, 255, 255, 0.7));
   padding: 10px;
   border-radius: 5px;
 }

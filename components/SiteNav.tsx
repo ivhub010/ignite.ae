@@ -160,6 +160,8 @@ export default function SiteNav() {
                 <p className="ov-eyebrow">Get in touch</p>
                 <a href="tel:800446483" className="ov-contact-tel">800 IGNITE (446 483)</a>
                 <a href="mailto:info@ignite.ae" className="ov-contact-email">info@ignite.ae</a>
+                <br/>
+                <a href="https://api.whatsapp.com/message/E6P4PRFFLS7OB1?autoload=1&app_absent=0" className="whatsapp-btn">WhatsApp us</a>
               </div>
             </div>
           </div>
@@ -197,6 +199,8 @@ export default function SiteNav() {
             <p className="ov-eyebrow" style={{ marginBottom: 12 }}>Get in touch</p>
             <a href="tel:800446483" className="ov-contact-tel">800 IGNITE</a>
             <a href="mailto:info@ignite.ae" className="ov-contact-email">info@ignite.ae</a>
+            <br/>
+            <a href="https://api.whatsapp.com/message/E6P4PRFFLS7OB1?autoload=1&app_absent=0" className="whatsapp-btn">WhatsApp us</a>
           </div>
         </div>
       </div>

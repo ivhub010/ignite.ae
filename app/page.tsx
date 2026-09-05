@@ -182,7 +182,7 @@ const LATEST_NEWS = [
     // link: 'https://ignite.ae/societe-generale/',
     link: '#',
     description:
-      'A fantastic afternoon with the Société Générale team! Colleagues from across the region joined us for a Beach Team Building session designed to challenge, energize, and strengthen collaboration. From engaging team exercises to problem-solving challenges, everyone brought their best. We concluded the day with a BBQ buffet and awards, celebrating achievements and creating lasting memories. At IGNITE, we create experiences that build stronger teams and meaningful connections. #TeamBuilding #EmployeeEngagement #Collaboration',
+      'A fantastic afternoon with the Société Générale team! Colleagues from across the region joined us for a Beach Team Building session designed to challenge, energize, and strengthen collaboration. From engaging team exercises to problem-solving challenges, everyone brought their best. We concluded the day with a BBQ buffet and awards, celebrating achievements and creating lasting memories. At IGNITE, we create experiences that build stronger teams and meaningful connections.',
   },
   {
     date: 'January 16, 2026',
@@ -191,7 +191,7 @@ const LATEST_NEWS = [
     // link: 'https://ignite.ae/promo-fix/',
     link: '#',
     description:
-      'A fantastic afternoon with the Pro Fix team! Following their team kick-off, we hosted an engaging session filled with energy, collaboration, and meaningful team challenges. It was inspiring to see everyone connect, have fun, and build stronger bonds. We look forward to partnering with this team again and creating more memorable experiences! #TeamBuilding #EmployeeEngagement #Collaboration',
+      'A fantastic afternoon with the Pro Fix team! Following their team kick-off, we hosted an engaging session filled with energy, collaboration, and meaningful team challenges. It was inspiring to see everyone connect, have fun, and build stronger bonds. We look forward to partnering with this team again and creating more memorable experiences!',
   },
   {
     date: 'January 08, 2026',
