@@ -327,7 +327,7 @@ export default function PinkIsPunkClient() {
         </p>
 
         <h2 className="stats-heading">
-          Ninteteen years of moving with purpose.
+          19 years of moving with purpose.
         </h2>
 
         <p className="content-body" style={{maxWidth:'100%'}}>
