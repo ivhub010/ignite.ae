@@ -229,6 +229,78 @@ const LATEST_NEWS = [
     description:
       'We started the session with a sensual beach yoga class, followed by invigorating ice plunges and stand-up paddleboarding to soak up some vitamin sea. The morning concluded with a beautiful breakfast on the RIVA terrace, where the team could relax, unwind, and also choose to continue enjoying the services of IGNITE Water Sports. A perfect blend of wellness, recovery, and connection by the beach.',
   },
+  {
+    date: 'September 24, 2025',
+    title: 'DHL team during their MEA YTP Kick-Off',
+    image: '/assets/images/news/DHL.png',
+    // link: 'https://ignite.ae/a-wonderful-morning-spent-with-the-emirates-facecard-team/',
+    link: '#',
+    description:
+      'We had the privilege of working with the DHL team during their MEA YTP Kick-Off. Across two engaging sessions, we focused first on personal wellness for entrepreneurs, helping participants strengthen their mindset and energy for success. The second session brought the team together through a team-building experience centred on music, sound, and teamwork a powerful way to connect, collaborate, and create harmony as one. An inspiring group with incredible energy, we look forward to supporting the team again soon.',
+  },
+  {
+    date: 'September 1, 2025',
+    title: 'IGNITE Pink is Punk is Back for 2025!',
+    image: '/assets/images/pip-1946.jpg',
+    // link: 'https://ignite.ae/a-wonderful-morning-spent-with-the-emirates-facecard-team/',
+    link: '#',
+    description:
+      'Our 2024 campaign was a powerful reminder of what community can achieve. With over AED 123,000 raised across three incredible events, 100% of the proceeds went directly to the Al Jalila Foundation to support breast cancer patients and fund life-saving research. We’re incredibly grateful to everyone who took part from the 900+ participants to our amazing partners, especially our Title Sponsor: Medcare Women & Children Hospital, and key supporters including: Keen PR, Anantara The Palm, RIVA Beach Club, JLW, Kibsons, Spendlove Group, Urban Veda, VITALICE, Maxi Nutrition, Costa, Pret, Mr. Toad’s, and all our activation partners. And now… we’re back for 2025 and we’d love to have you involved! Find out more and get involved! Together, we’re making a meaningful difference. Let’s do it again.',
+  },
+  {
+    date: 'July 28, 2025',
+    title: 'World Heart Day Event',
+    image: '/assets/images/news/world-heart-day.png',
+    // link: 'https://ignite.ae/a-wonderful-morning-spent-with-the-emirates-facecard-team/',
+    link: '#',
+    description:
+      'After the success of our World Mental Health Day event on May 31st, we’re back! On September 27th, IGNITE is hosting another AED 99 Community Morning in celebration of World Heart Day bringing together movement, recovery, and wellness in one unforgettable morning by the beach. Expect Pilates, Beach Yoga, Ice Plunges, Boot Camp, SUP and Kayak Rentals, plus activations from leading wellness brands and partners who share our mission: to move people physically, mentally, emotionally.',
+  },
+  {
+    date: 'May 13, 2025',
+    title: 'Partnership between IGNITE Group and Monster Middle East - GoPro',
+    image: '/assets/images/news/IMG_9391.jpg',
+    // link: 'https://ignite.ae/a-wonderful-morning-spent-with-the-emirates-facecard-team/',
+    link: '#',
+    description:
+      'We’re thrilled to announce a new partnership between IGNITE Group and Monster Middle East , the official distributor of GoPro! For years, we’ve relied on GoPro cameras to capture the energy and joy of our IGNITE water sports birthday parties and our high-energy IGNITE team building sessions - from splashes and smiles to teamwork and triumph. Now, we’re taking things to the next level. This exciting collaboration will extend across all IGNITE activation’s, empowering both brands to grow while continuing to inspire and support our incredible community. We’re especially excited to kick things off at the inaugural IGNITE Mental Health Morning on 31st May https://lnkd.in/dT6Cm_6u , where GoPro will be on-site to support the event and guide participants on how to get the most out of their GoPro cameras. Let’s capture the movement, the moments, and the mission - together.',
+  },
+  {
+    date: 'April 25, 2025',
+    title: 'The Hope Run',
+    image: '/assets/images/news/hoperun.JPG',
+    // link: 'https://ignite.ae/a-wonderful-morning-spent-with-the-emirates-facecard-team/',
+    link: '#',
+    description:
+      'We’re incredibly proud of our CEO, Guillaume Mariole, and the entire IGNITE family - past and present - for building such a powerful and lasting legacy. When Guillaume chose Dubai as his home, he made a heartfelt commitment: to launch IGNITE Pink is Punk, a campaign dedicated to raising awareness and funds for breast cancer. Since 2008, this mission has grown into a movement—educating, inspiring, and creating opportunities for people to unite through movement, fun, and healthy lifestyle habits under the IGNITE banner. This journey reached a deeply humbling milestone when H.H. Sheikh Mansoor bin Mohammed bin Rashid Al Maktoum and the Al Jalila Foundation recognized Guillaume for leading this initiative. What made the moment even more meaningful was having his eldest daughter, Belle, by his side to witness her father being honoured on stage - a memory he will always cherish.',
+  },
+  {
+    date: 'April 17, 2025',
+    title: 'High-energy team-building session for Hydrafacial',
+    image: '/assets/images/news/Hydrafacial.jpeg',
+    // link: 'https://ignite.ae/a-wonderful-morning-spent-with-the-emirates-facecard-team/',
+    link: '#',
+    description:
+      'We had the pleasure of delivering a high-energy team-building session for Hydrafacial. This session was part of a special event in Dubai, where Hydrafacial hosted 36 distributors from across the MENA region — a vibrant mix of marketing, sales, and education professionals. The brief: create an engaging and unforgettable experience that would energize, connect, and reflect the brand’s dynamic DNA. The result? A powerful blend of laughter, collaboration, and high-impact energy — all amplified by an incredible group who showed up ready to engage, grow, and have fun. Thank you to the Hydrafacial team for trusting us with this moment. It was a privilege to be part of such an inspiring gathering.',
+  },
+  {
+    date: 'April 16, 2025',
+    title: 'IGNITE Turns 15!',
+    image: '/assets/images/pip-1743.jpg',
+    // link: 'https://ignite.ae/a-wonderful-morning-spent-with-the-emirates-facecard-team/',
+    link: '#',
+    description:
+      'IGNITE was created with a simple but powerful mission — to inspire movement and educate people on healthy lifestyle habits. Celebrating 15 years of living and breathing that mission was a truly proud moment, made even more special by sharing it with so many who have been part of the IGNITE journey. What a fantastic afternoon spent with our incredible IGNITE family and wider community! A heartfelt thank you to everyone who came out to make this milestone celebration so memorable. Here’s to many more years of igniting positive experiences together!',
+  },
+  {
+    date: 'April 8, 2025',
+    title: 'An Unforgettable Afternoon with Hettich at Hatta Fort',
+    image: '/assets/images/news/Hettich.png',
+    // link: 'https://ignite.ae/a-wonderful-morning-spent-with-the-emirates-facecard-team/',
+    link: '#',
+    description:
+      'We had the absolute pleasure of delivering a dynamic team-building experience for the leadership team at Hettich, set against the stunning backdrop of Hatta Fort. From engaging challenges to shared laughter, the energy and teamwork on display made for an unforgettable day. A huge thank you to the Hettich team for trusting us to be part of your journey—what a fantastic group to work with!',
+  },
 ];
 
 export default function Home() {
