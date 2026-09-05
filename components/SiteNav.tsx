@@ -8,6 +8,7 @@ import DivisionLink from './DivisionLink';
 const PAGES: [string, string, string?][] = [
   ['Home', '/'],
   ['About Us', '/about'],
+  ['Services', '#'],
   ['Events', '#'],
   // ['Pink is Punk', '/pink-is-punk', '#CE00A0'],
   // ['News', '/blog'],
@@ -132,13 +133,14 @@ export default function SiteNav() {
                         Pink is Punk
                       </Link>
                     )}
+
                   </div>
                 ))}
               </div>
             </div>
             <br/>
             <br/>
-            <p className="ov-eyebrow ov-item" style={{ transitionDelay: '.1s' }}>Divisions</p>
+            <p className="ov-eyebrow ov-item" style={{ transitionDelay: '.1s' }}>Services</p>
             {DIVISIONS.map((d, i) => (
               <DivisionLink
                 key={d.label}
@@ -156,7 +158,7 @@ export default function SiteNav() {
             <div className="ov-mobile-extra">
               <div className="ov-item" style={{ marginTop: 32, transitionDelay: '.7s' }}>
                 <p className="ov-eyebrow">Get in touch</p>
-                <a href="tel:800446483" className="ov-contact-tel">800 IGNITE</a>
+                <a href="tel:800446483" className="ov-contact-tel">800 IGNITE (446 483)</a>
                 <a href="mailto:info@ignite.ae" className="ov-contact-email">info@ignite.ae</a>
               </div>
             </div>
