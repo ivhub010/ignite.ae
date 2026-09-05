@@ -3233,6 +3233,16 @@ button{font-family:inherit}
   }
 }
 
+.brandimage img{
+  opacity: 1;
+  object-fit: contain;
+  max-width: 25%;
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+}
+
 
 /* TABLET */
 
