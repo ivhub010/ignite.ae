@@ -311,7 +311,7 @@ export default function Home() {
     <main>
       <section className="hero">
         <div className="hero-bg">
-          <img src="/assets/images/pip-1743.jpg" alt="" />
+          <img src="/assets/images/home-hero-ignite.png" alt="" />
           <div className="hero-bg-overlay" />
         </div>
         <div className="hero-left">
@@ -445,7 +445,7 @@ export default function Home() {
             </p>
 
             <div className="pink-punk-permit">
-              IACAD Permit: PRHCE-004691180
+              IACAD Permit: PRHCE-005939271
             </div>
 
             <Link className="pink-punk-link" href="/pink-is-punk">Read More<span>↗</span></Link>

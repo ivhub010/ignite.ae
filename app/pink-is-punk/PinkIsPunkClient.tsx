@@ -187,13 +187,15 @@ export default function PinkIsPunkClient() {
         {/* Hero Content */}
         <div className="pip-hero-content">
           <div className="pip-campaign-label">
+            <img src="/assets/images/piplogo.png" alt="" />
+            <br/>
             Community Impact · Since 2007
           </div>
 
           <h1 className="pip-title">
-            Pink
-            <br />
-            is <span>Punk 2026</span>
+            United in Movement.
+            <br />  
+            <span>United in Purpose.</span>
           </h1>
 
           <p className="pip-sub">
@@ -239,19 +241,17 @@ export default function PinkIsPunkClient() {
               Community Impact
             </p>
 
+            <div className="pip-logo">
+              <img src="/assets/images/piplogo.png" alt="" />
+            </div>
+
             <h2 className="pink-campaign-title">
               IGNITE Pink is Punk 2025:
               <span>
                 {' '}
-                United in Movement. United in Purpose.
+                AED 111,858 raised. Thank you, Dubai.
               </span>
             </h2>
-
-            <p className="pink-campaign-lead">
-              <strong>AED 111,858 raised.</strong>
-              <br />
-              <strong>Thank you, Dubai.</strong>
-            </p>
 
             <p>
               The 2025 campaign was our most powerful yet. Across three events,
@@ -260,12 +260,30 @@ export default function PinkIsPunkClient() {
               campaign was personally recognised by His Highness Sheikh Mansour
               for its community impact.
             </p>
+
+            <div className="pink-campaign-permit">
+              <span>IACAD Permit : </span>
+              <strong>PRHCE-005939271</strong>
+              <br/>
+              <br/>
+              <span>100% of net proceeds support Al Jalila Foundation breast cancer research and treatment in the UAE.</span>
+            </div>
+
+            <a
+              href="https://www.youtube.com/watch?v=0k6vQakH-LM"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pink-campaign-cta"
+            >
+              IGNITE Pink is Punk Campaign video 2024
+              <span>↗</span>
+            </a>
           </div>
 
           <div className="pink-campaign-gallery">
             <div className="pink-campaign-main-image">
               <img
-                src="/assets/images/ignite.ae-8-600x300.png"
+                src="/assets/images/new-cheque.png"
                 alt="IGNITE Pink is Punk campaign"
               />
 
@@ -298,35 +316,6 @@ export default function PinkIsPunkClient() {
           </div>
         </div>
 
-        <div
-          className="pink-campaign-inner"
-          style={{ display: 'block' }}
-        >
-          <div
-            className="pink-campaign-content"
-            style={{ maxWidth: '100%' }}
-          >
-            <div className="pink-campaign-permit">
-              <span>IACAD Permit :</span>
-              <strong>PRHCE-004691180</strong>
-
-              <span>
-                · 100% of net proceeds support Al Jalila Foundation breast
-                cancer research and treatment in the UAE.
-              </span>
-            </div>
-
-            <a
-              href="https://www.youtube.com/watch?v=0k6vQakH-LM"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="pink-campaign-cta"
-            >
-              IGNITE Pink is Punk Campaign video 2024
-              <span>↗</span>
-            </a>
-          </div>
-        </div>
       </section>
 
       <section id="campaign"

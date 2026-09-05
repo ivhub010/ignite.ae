@@ -51,10 +51,11 @@ button{font-family:inherit}
 .overlay-menu.open .ov-close{opacity:1;pointer-events:auto}
 .ov-close:hover{background:rgba(255,255,255,.14);color:#fff}
 
-.site-footer{background:#0a1018;padding:clamp(48px,6vw,96px) clamp(24px,6vw,100px);border-top:1px solid rgba(255,255,255,.06)}
+.site-footer{background:#0a1018;padding:30px 70px;border-top:1px solid rgba(255,255,255,.06)}
 .footer-wordmark{font:900 italic clamp(40px,6vw,80px)/1 var(--font-archivo),sans-serif;color:#5b5b5b;letter-spacing:-.02em;margin-bottom:40px}
+.footer-wordmark img{max-width:50%;}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
-.footer-about{font:400 14px/1.7 var(--font-inter),sans-serif;color:rgba(255,255,255,.4);max-width:320px}
+.footer-about{letter-spacing: 0.1px;font:400 14px/1.7 var(--font-inter),sans-serif;color:rgba(255,255,255,.4);max-width:320px}
 .footer-heading{font:600 10px/1 var(--font-inter),sans-serif;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.3);margin-bottom:16px}
 .footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
 .footer-links a{font:400 13px/1 var(--font-inter),sans-serif;color:rgba(255,255,255,.5);transition:color .2s}
@@ -116,12 +117,12 @@ button{font-family:inherit}
 .rail-panel-title{font:700 italic clamp(24px,7vw,34px)/1.05 var(--font-archivo),sans-serif;color:#fff;letter-spacing:-.02em;margin-bottom:14px}
 .rail-panel-cta{display:inline-block;margin-top:20px;font:700 11px/1 var(--font-archivo),sans-serif;text-transform:uppercase;letter-spacing:.1em;border:1px solid;padding:12px 22px;border-radius:8px}
 
-.stats-section{background:#0F1923;padding:clamp(64px,8vw,120px) clamp(24px,6vw,100px)}
+.stats-section{background:#0F1923;padding:30px 50px;}
 .stats-eyebrow{font:600 11px/1 var(--font-inter),sans-serif;text-transform:uppercase;letter-spacing:.2em;color:#69717b;margin-bottom:56px;display:flex;align-items:center;gap:12px}
 .stats-eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--lime)}
 .stats-heading{font:700 italic clamp(32px,4vw,56px)/1.1 var(--font-archivo),sans-serif;color:#fff;margin-bottom:60px}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;background:#172027}
-.stat-tile{background:#0F1923;padding:clamp(32px,4vw,56px) clamp(20px,3vw,40px)}
+.stat-tile{background:#0F1923;padding:25px;}
 .stat-num{font:900 italic clamp(44px,6vw,80px)/1 var(--font-archivo),sans-serif;color:var(--lime);letter-spacing:-.02em}
 .stat-label{font:600 10px/1 var(--font-inter),sans-serif;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.4);margin-top:10px;line-height: 2;}
 
@@ -226,10 +227,12 @@ button{font-family:inherit}
 .info-block:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
 .info-label{font:600 9px/1 var(--font-inter),sans-serif;text-transform:uppercase;letter-spacing:.16em;color:rgba(255,255,255,.3);margin-bottom:10px}
 .info-value{font:700 italic clamp(20px,2.5vw,32px)/1.1 var(--font-archivo),sans-serif;color:#fff}
-.phone-big{font:900 italic clamp(32px,4vw,56px)/1 var(--font-archivo),sans-serif;color:var(--lime);display:block;margin-bottom:6px}
+.phone-big{font:900 italic clamp(32px,4vw,40px)/1 var(--font-archivo),sans-serif;color:var(--lime);display:block;margin-bottom:6px}
 .info-sub{font:400 13px/1.5 var(--font-inter),sans-serif;color:rgba(255,255,255,.35);margin-top:6px}
 .whatsapp-btn{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#fff;font:700 12px/1 var(--font-inter),sans-serif;text-transform:uppercase;letter-spacing:.08em;padding:14px 24px;border-radius:8px;margin-top:20px;transition:background .2s}
 .whatsapp-btn:hover{background:#1da855}
+.booknow-btn{border: 1px solid #D2DE26;display:inline-flex;align-items:center;gap:10px;background:#222E34;color:#fff;font:700 12px/1 var(--font-inter),sans-serif;text-transform:uppercase;letter-spacing:.08em;padding:14px 24px;border-radius:8px;margin-top:20px;transition:background .2s}
+.booknow-btn:hover{background:#D2DE26; color:#222E34;}
 .division-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .division-pill{font:600 9px/1 var(--font-inter),sans-serif;text-transform:uppercase;letter-spacing:.1em;padding:6px 12px;border-radius:20px;border:1px solid currentColor}
 
@@ -343,7 +346,7 @@ button{font-family:inherit}
 }
 
 .pip-campaign-label {
-  display: inline-flex;
+  display: block;
   align-items: center;
   margin-bottom: 38px;
   color: #e000a8;
@@ -352,6 +355,28 @@ button{font-family:inherit}
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
+
+  img{
+    max-width: 10%;
+    margin-bottom: 10px;
+    border-radius: 3px;
+
+    @media(max-width:767px){
+      max-width: 30%;
+    }
+  }
+}
+
+.pink-campaign-content {
+  img{
+    max-width: 50%;
+    margin-bottom: 10px;
+    border-radius: 3px;
+
+    @media(max-width:767px){
+      max-width: 30%;
+    }
+  }
 }
 
 /* =========================
@@ -361,7 +386,7 @@ button{font-family:inherit}
 .pip-title {
   margin: 0;
   max-width: 620px;
-  font-size: clamp(80px, 9vw, 145px);
+  font-size: clamp(80px, 5vw, 145px);
   line-height: 0.82;
   font-weight: 900;
   font-style: italic;
@@ -381,7 +406,7 @@ button{font-family:inherit}
   max-width: 780px;
   margin: 45px 0 50px;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.55;
   font-weight: 400;
 }
@@ -1055,7 +1080,7 @@ button{font-family:inherit}
 
 .latest-news-section {
   background: #080f17;
-  padding: 105px 0 110px;
+  padding: 60px 0 10px;
   overflow: hidden;
 }
 
@@ -1352,7 +1377,7 @@ button{font-family:inherit}
 .pink-punk-section {
   position: relative;
 
-  padding: 110px 46px;
+  padding: 60px 50px;
 
   background:
     radial-gradient(
@@ -2160,7 +2185,7 @@ button{font-family:inherit}
 /* PERMIT */
 
 .pink-campaign-permit {
-  display: flex;
+  display: block;
   align-items: center;
 
   gap: 12px;
@@ -2237,7 +2262,7 @@ button{font-family:inherit}
   position: relative;
 
   width: 100%;
-  aspect-ratio: 16 / 8.7;
+  aspect-ratio: 8 / 8.7;
 
   overflow: hidden;
 
@@ -2485,7 +2510,7 @@ button{font-family:inherit}
 .pink-events-section {
   position: relative;
 
-  padding: 110px 46px 120px;
+  padding: 60px 50px;
 
   overflow: hidden;
 }
@@ -2872,7 +2897,7 @@ button{font-family:inherit}
 .pink-partners-section {
   position: relative;
 
-  padding: 110px 46px 120px;
+  padding: 60px 50px;
 
   background:
     radial-gradient(

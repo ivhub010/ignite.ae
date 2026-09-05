@@ -21,7 +21,7 @@ const TIMELINE = [
 
   [
     '2006',
-    "Launches one of Dubai's first outdoor bootcamps",
+    "Launches Dubai's first outdoor bootcamp programme",
     'Pioneers the military bootcamp concept in Dubai, creating a new fitness category in the UAE.'
   ],
 
@@ -45,7 +45,7 @@ const TIMELINE = [
 
   [
     '2013',
-    'Water Sports launched — Team Building goes standalone',
+    'Water Sports launched - Team Building goes standalone',
     'IGNITE Water Sports launches at Palm Jumeirah. Team Building established as its own vertical IGNITE now operates three distinct service businesses.'
   ],
 
@@ -92,15 +92,15 @@ export default function About() {
           <div className="about-meta">
             <div className="about-meta-item">
               <p className="about-meta-label">Founded</p>
-              <p className="about-meta-value">Dubai, UAE · 2007</p>
+              <p className="about-meta-value">Dubai, UAE · 2010</p>
             </div>
             <div className="about-meta-item">
               <p className="about-meta-label">Mission</p>
-              <p className="about-meta-value">Contributing to the quality of life of our community by encouraging healthy lifestyle habits and movement.</p>
+              <p className="about-meta-value">Our mission is to contribute to the community’s quality of life, by encouraging healthy lifestyle habits and movement</p>
             </div>
             <div className="about-meta-item">
               <p className="about-meta-label">Services</p>
-              <p className="about-meta-value">Fitness, Corporate, Team Building, Water Sports, Kids, Consultancy, Surface, Homespa</p>
+              <p className="about-meta-value">Water Sports, Kids, Team Building, Corporate Wellness, Fitness & Wellness, Consultancy</p>
             </div>
           </div>
         </div>

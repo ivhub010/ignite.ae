@@ -17,7 +17,7 @@ export default function Contact() {
         <div className="contact-form-side">
           <p className="contact-eyebrow">Get in touch</p>
           <h1 className="contact-heading">Let&rsquo;s move together.</h1>
-          <p className="contact-sub">Whether you&rsquo;re looking for a corporate wellness programme, a team building event, or just want to find your nearest class — we&rsquo;re here.</p>
+          <p className="contact-sub">Whether you're booking a water sports session, planning a team building day, enquiring about corporate wellness or have a general question, we'd love to hear from you.</p>
           <form onSubmit={handleSubmit}>
             <div className="form-row">
               <div className="form-group">
@@ -40,7 +40,7 @@ export default function Contact() {
             <div className="form-group">
               <label className="form-label" htmlFor="interest">I&rsquo;m interested in</label>
               <select id="interest" name="interest" className="form-select" defaultValue="">
-                <option value="" disabled>Select a division…</option>
+                <option value="" disabled>Select Service</option>
                 {DIVISIONS.map(d => <option key={d.label}>{d.label}</option>)}
                 <option>General enquiry</option>
               </select>
@@ -58,9 +58,9 @@ export default function Contact() {
         <div className="contact-info-side">
           <div className="info-block">
             <p className="info-label">Call us</p>
-            <a href="tel:800446483" className="phone-big">800 IGNITE</a>
-            <p className="info-sub">800 446 483 · Sunday–Thursday, 9am–6pm GST</p>
-            <a href="https://wa.me/971" className="whatsapp-btn">WhatsApp us</a>
+            <a href="tel:800446483" className="phone-big">800 IGNITE (446 483)</a>
+            <p className="info-sub">Monday–Friday, 9am–6pm GST</p>
+            <a href="https://wa.me/971800446483" className="whatsapp-btn">WhatsApp us</a>
           </div>
           <div className="info-block">
             <p className="info-label">Email</p>
@@ -69,11 +69,15 @@ export default function Contact() {
           </div>
           <div className="info-block">
             <p className="info-label">Location</p>
-            <p className="info-value">Dubai, UAE</p>
-            <p className="info-sub">Programmes and events delivered UAE-wide</p>
+            <p className="info-value">Water Sports RIVA Beach</p>
+            <p className="info-sub">Palm Jumeirah, Dubai<br/>Open 6am–7pm daily</p>
+            <br/>
+            <p className="info-sub">Hours vary by season</p>
+            <a href="https://book.ignitewatersports.com/?type=rentals" className="booknow-btn">Book Now</a>
+            <p className="info-sub"><i>Season changes apply - check site for current hours</i></p>
           </div>
           <div className="info-block">
-            <p className="info-label">Our divisions</p>
+            <p className="info-label">Our Services</p>
             <div className="division-pills">
               {DIVISIONS.map(d => (
                 <span key={d.label} className="division-pill" style={{ color: d.color }}>{d.label}</span>

@@ -6,9 +6,10 @@ export default function SiteFooter() {
   return (
     <>
       <footer className="site-footer">
-        <div className="footer-wordmark">IGNITE</div>
+        
         <div className="footer-grid">
-          <div>
+          <div className="footer-wordmark">
+            <img src="/assets/logos/Ignite brandmark_RGB_Green_FA.png" alt="" />
             <p className="footer-about">Dubai's leading active lifestyle brand. Since 2010.</p>
           </div>
           <div>
@@ -38,7 +39,7 @@ export default function SiteFooter() {
         </div>
         <div className="footer-bottom">
           <span className="footer-copy">© {new Date().getFullYear()} IGNITE. All rights reserved.</span>
-          <span className="footer-copy">Dubai, UAE</span>
+          {/* <span className="footer-copy">Dubai, UAE</span> */}
         </div>
       </footer>
 
