@@ -9,8 +9,8 @@ const nextConfig: NextConfig = {
       { source: '/kids',               destination: 'https://ignitekids.com/', permanent: false },
     ];
   },
-  output: "export",
-  trailingSlash: true,
+  // output: "export",
+  // trailingSlash: true,
 };
 
 export default nextConfig;
