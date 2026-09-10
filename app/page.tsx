@@ -301,6 +301,42 @@ const LATEST_NEWS = [
     description:
       'We had the absolute pleasure of delivering a dynamic team-building experience for the leadership team at Hettich, set against the stunning backdrop of Hatta Fort. From engaging challenges to shared laughter, the energy and teamwork on display made for an unforgettable day. A huge thank you to the Hettich team for trusting us to be part of your journey—what a fantastic group to work with!',
   },
+  {
+    date: 'January 7, 2025',
+    title: 'IGNITE ICBA',
+    image: '/assets/images/news/ICBA.jpg',
+    // link: 'https://ignite.ae/a-wonderful-morning-spent-with-the-emirates-facecard-team/',
+    link: '#',
+    description:
+      'On January 7th, we had the pleasure of working with the fantastic team from ICBA for an IGNITE team-building session! The day started with creative indoor activities, then we turned up the energy and headed outdoors to the beautiful grounds for more dynamic challenges. The team brought incredible energy, collaboration, and camaraderie throughout the session. Thank you, ICBA, for having us! We hope to partner with you again soon to IGNITE your team spirit!',
+  },
+  {
+    date: 'December 6, 2024',
+    title: 'A Fantastic Morning with the ETEX Team!',
+    image: '/assets/images/news/ETEX-team.jpg',
+    // link: 'https://ignite.ae/a-wonderful-morning-spent-with-the-emirates-facecard-team/',
+    link: '#',
+    description:
+      'From the moment they arrived, their energy and enthusiasm made team building a breeze! It’s always a joy working with such motivated teams. Thank you, ETEX, for trusting us to create an unforgettable experience. We look forward to partnering with you again in the future!',
+  },
+  {
+    date: 'November 22, 2024',
+    title: 'Hosting the team from Chanel at IGNITE water sports',
+    image: '/assets/images/news/chanel.png',
+    // link: 'https://ignite.ae/a-wonderful-morning-spent-with-the-emirates-facecard-team/',
+    link: '#',
+    description:
+      'We had a fantastic time hosting the team from Chanel at IGNITE water sports for an inspiring team bonding session! The day began with a relaxing yoga class, followed by an invigorating ice plunge experience that brought the team even closer together.',
+  },
+  {
+    date: 'October 24, 2024',
+    title: 'FitConnector',
+    image: '/assets/images/news/fitconnector.png',
+    // link: 'https://ignite.ae/a-wonderful-morning-spent-with-the-emirates-facecard-team/',
+    link: '#',
+    description:
+      'It was great to have the team from FitConnector back, with IGNITE water sports hosting the community! Their monthly events feature an exciting mix of beach bootcamp, ice plunges, breath work, and yoga. Follow @fitconnectoruae and stay tuned for the next one happening in November!',
+  },
 ];
 
 export default function Home() {
