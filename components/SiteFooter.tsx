@@ -14,10 +14,22 @@ export default function SiteFooter() {
           </div>
           <div>
             <p className="footer-heading">The IGNITE Group</p>
-            <ul className="footer-links">
-              {DIVISIONS.map(d => (
+            <ul className="footer-links footer-division-links">
+              {DIVISIONS.map((d) => (
                 <li key={d.label}>
-                  <DivisionLink href={d.href} external={d.external} style={{ color: d.color }}>{d.label}</DivisionLink>
+                  <DivisionLink
+                    href={d.href}
+                    external={d.external}
+                    className="footer-division-card"
+                  >
+                    <span className="footer-division-logo">
+                      <img src={d.whitelogo} alt={d.label} />
+                    </span>
+
+                    <span className="footer-division-name">
+                      {d.label}
+                    </span>
+                  </DivisionLink>
                 </li>
               ))}
             </ul>

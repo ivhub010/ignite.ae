@@ -35,6 +35,7 @@ export default function DivisionRail() {
               >
                 <span className="rail-accent-ln" style={{ background: d.color }} />
                 <span className="rail-num">{d.num}</span>
+                <span><img src={d.whitelogo} style={{maxWidth:'50px'}}/></span>
                 <span className="rail-name">{d.label}</span>
                 <span className="rail-chevron" style={{ color: d.color, transform: isOpen ? 'rotate(180deg)' : 'none' }}>⌄</span>
                 <DivisionLink href={d.href} external={d.external} className="rail-arrow" style={{ color: d.color }}>→</DivisionLink>
@@ -45,9 +46,9 @@ export default function DivisionRail() {
                 <div className="rail-panel-inner">
                   <img src={d.image} alt={d.label} className="rail-panel-img" />
                   <div className="rail-panel-body">
-                    {/* <p className="rail-image-eyebrow" style={{ color: d.color }}>IGNITE</p>
-                    <p className="rail-panel-title">{d.label}</p> */}
-                    <p className="rail-image-title brandimage"><img src={current.brand}/></p>
+                    <p className="rail-image-eyebrow" style={{ color: d.color }}>IGNITE</p>
+                    <p className="rail-panel-title">{d.label}</p>
+                    {/* <p className="rail-image-title brandimage"><img src={current.brand}/></p> */}
                     <div className="rail-chips">
                       {d.chips?.map(c => (
                         <span key={c} className="rail-chip" style={{ color: d.color }}>{c}</span>
@@ -71,9 +72,9 @@ export default function DivisionRail() {
         ))}
         <div className="rail-image-overlay" />
         <div className="rail-image-label">
-          {/* <p className="rail-image-eyebrow" style={{ color: current.color }}>IGNITE</p>
-          <p className="rail-image-title">{current.label}</p> */}
-          <p className="rail-image-title brandimage"><img src={current.brand}/></p>
+          <p className="rail-image-eyebrow" style={{ color: current.color }}>IGNITE</p>
+          <p className="rail-image-title">{current.label}</p>
+          {/* <p className="rail-image-title brandimage"><img src={current.brand}/></p> */}
           <div className="rail-chips">
             {current.chips?.map(c => (
               <span key={c} className="rail-chip" style={{ color: current.color, backgroundColor: "rgba(0, 0, 0,0.7)" }}>{c}</span>

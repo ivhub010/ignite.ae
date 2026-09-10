@@ -180,7 +180,8 @@ export default function About() {
           {DIVISIONS.map(d => (
             <DivisionLink key={d.label} href={d.href} external={d.external} className="div-row">
               <span className="div-row-num">{d.num}</span>
-              <span className="div-row-dot" style={{ background: d.color }} />
+              {/* <span className="div-row-dot" style={{ background: d.color }} /> */}
+              <span><img src={d.whitelogo} style={{maxWidth:'50px'}}/></span>
               <span className="div-row-name">{d.label}</span>
               <span className="div-row-arrow" style={{ color: d.color }}>→</span>
             </DivisionLink>

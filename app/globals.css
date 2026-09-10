@@ -53,8 +53,8 @@ button{font-family:inherit}
 
 .site-footer{background:#0a1018;padding:30px 70px;border-top:1px solid rgba(255,255,255,.06)}
 .footer-wordmark{font:900 italic clamp(40px,6vw,80px)/1 var(--font-archivo),sans-serif;color:#5b5b5b;letter-spacing:-.02em;margin-bottom:40px}
-.footer-wordmark img{max-width:50%;}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+/* .footer-wordmark img{max-width:50%;} */
+.footer-grid{display:grid;grid-template-columns:1fr 2fr 1fr 1fr;gap:40px}
 .footer-about{letter-spacing: 0.1px;font:400 14px/1.7 var(--font-inter),sans-serif;color:rgba(255,255,255,.4);max-width:320px}
 .footer-heading{font:600 10px/1 var(--font-inter),sans-serif;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.3);margin-bottom:16px}
 .footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
@@ -3244,6 +3244,96 @@ button{font-family:inherit}
   border-radius: 5px;
 }
 
+.footer-division-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 390px;
+}
+
+.footer-division-links li {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-division-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 100%;
+  min-height: 64px;
+  padding: 12px 14px;
+
+  background: #17232d;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+
+  text-decoration: none;
+  box-sizing: border-box;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-division-card:hover {
+  background: #1e2c37;
+  transform: translateY(-2px);
+}
+
+.footer-division-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 52px;
+}
+
+.footer-division-logo img {
+  display: block;
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+  object-fit: contain;
+}
+
+.footer-division-name {
+  color: #9ca3aa;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .footer-division-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    max-width: 100%;
+  }
+
+  .footer-division-card {
+    min-height: 58px;
+    padding: 10px 10px;
+    gap: 7px;
+  }
+
+  .footer-division-logo {
+    width: 38px;
+  }
+
+  .footer-division-logo img {
+    max-width: 38px;
+  }
+
+  .footer-division-name {
+    font-size: 13px;
+  }
+}
 
 /* TABLET */
 
