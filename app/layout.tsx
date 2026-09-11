@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   description: 'IGNITE is Dubai`s leading active lifestyle brand. Water sports, team building and corporate wellness - trusted by P&G, Deloitte, McKinsey and 90+ leading organisations since 2010.',
   icons: {
     icon: "/assets/images/ignite-favicon.jpg",
-    shortcut: "/assets/logos/Ignite%20brandmark_RGB_Green_FA.png",
-    apple: "/assets/logos/Ignite%20brandmark_RGB_Green_FA.png",
+    shortcut: "/assets/logos/ignite-favicon.jpg",
+    apple: "/assets/logos/ignite-favicon.jpg",
   },
 };
 

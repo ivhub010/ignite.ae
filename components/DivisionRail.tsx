@@ -35,7 +35,7 @@ export default function DivisionRail() {
               >
                 <span className="rail-accent-ln" style={{ background: d.color }} />
                 <span className="rail-num">{d.num}</span>
-                <span><img src={d.whitelogo} style={{maxWidth:'50px'}}/></span>
+                <span><img src={d.whitelogo} style={{maxWidth:'80px'}}/></span>
                 <span className="rail-name">{d.label}</span>
                 <span className="rail-chevron" style={{ color: d.color, transform: isOpen ? 'rotate(180deg)' : 'none' }}>⌄</span>
                 <DivisionLink href={d.href} external={d.external} className="rail-arrow" style={{ color: d.color }}>→</DivisionLink>
