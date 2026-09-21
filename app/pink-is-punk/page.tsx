@@ -13,7 +13,7 @@ export const metadata: Metadata = {
       'Since 2008 IGNITE Pink is Punk has raised over AED 950,000 for breast cancer research in the UAE. Join us for three events in 2026 - Swim:Run, Moonlit Yoga and Pink Paddle.',
     images: [
       {
-        url: '/assets/images/piplogo.png',
+        url: 'https://ignite.ae/assets/images/piplogo.png',
         alt: 'IGNITE Pink is Punk',
       },
     ],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'IGNITE Pink is Punk - UAE Breast Cancer Awareness Campaign',
     description:
       'Since 2008 IGNITE Pink is Punk has raised over AED 950,000 for breast cancer research in the UAE. Join us for three events in 2026 - Swim:Run, Moonlit Yoga and Pink Paddle.',
-    images: ['/assets/images/piplogo.png'],
+    images: ['https://ignite.ae/assets/images/piplogo.png'],
   },
 };
 
