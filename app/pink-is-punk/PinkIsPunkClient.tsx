@@ -106,28 +106,32 @@ const PARTNER_GROUPS = [
 
 const SUPPORTING_SPONSORS = [
   {
-    name: 'Supporting Sponsor 1',
+    name: 'JLW',
     image: '/assets/images/pink-is-punk/partners/sponsor-1.png',
   },
   {
-    name: 'Supporting Sponsor 2',
+    name: 'Spendlove Group',
     image: '/assets/images/pink-is-punk/partners/sponsor-2.png',
   },
+  // {
+  //   name: 'Costa Coffee',
+  //   image: '/assets/images/pink-is-punk/partners/sponsor-3.png',
+  // },
   {
-    name: 'Supporting Sponsor 3',
-    image: '/assets/images/pink-is-punk/partners/sponsor-3.png',
-  },
-  {
-    name: 'Supporting Sponsor 4',
+    name: 'PRET',
     image: '/assets/images/pink-is-punk/partners/sponsor-4.png',
   },
   {
     name: 'TOADS',
     image: '/assets/images/pink-is-punk/partners/toads.png',
   },
+  // {
+  //   name: 'Life',
+  //   image: '/assets/images/pink-is-punk/partners/life.jpg',
+  // },
   {
-    name: 'Life',
-    image: '/assets/images/pink-is-punk/partners/life.jpg',
+    name: 'Besix',
+    image: '/assets/images/pink-is-punk/partners/client-12.png',
   },
 ];
 
