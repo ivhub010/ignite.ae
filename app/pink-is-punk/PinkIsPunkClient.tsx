@@ -121,10 +121,10 @@ const SUPPORTING_SPONSORS = [
     name: 'PRET',
     image: '/assets/images/pink-is-punk/partners/sponsor-4.png',
   },
-  {
-    name: 'TOADS',
-    image: '/assets/images/pink-is-punk/partners/toads.png',
-  },
+  // {
+  //   name: 'TOADS',
+  //   image: '/assets/images/pink-is-punk/partners/toads.png',
+  // },
   // {
   //   name: 'Life',
   //   image: '/assets/images/pink-is-punk/partners/life.jpg',
