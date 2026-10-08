@@ -28,18 +28,20 @@ const PINK_EVENTS = [
     title: 'Oct 3rd',
     text: 'Put on your pink kit and join the community for an energetic Swim:Run experience.',
     image: '/assets/images/pink-is-punk/swim-run.png',
-    link: 'https://www.premieronline.com/event/ignite_pink_is_punk_swim_run_8760',
+    link: '',
+    year: '2026',
     viewphotos:
-      'https://www.dropbox.com/scl/fo/m9m9jl2mg6kdcw8ia72v1/AEbZWuDrCJ7U_8dY3iqbyDY?rlkey=83zifnulx0n0tm0iamaiv4voi&st=ccbjb375&dl=0',
+      'https://www.dropbox.com/scl/fo/mv0xryfjfkaf69lw302jk/ABN5z3PbUYjZ7cgtBBTO2MM?rlkey=twkxbcx6lclhq4rzl4x97qxjh&st=2ao0ze5t&dl=0',
     viewvideos:
-      'https://www.instagram.com/reel/DP1C4zAj_w-/?utm_source=ig_web_copy_link&igsh=ZzBjaG5jcHByemNk',
+      'https://www.youtube.com/watch?v=eZ00LX677dA&list=PL8oZhxPzOy2K7kTIY4-YZD6aKzjpCP65J',
   },
   {
     shortTitle: 'Pink is Punk Moonlit Yoga - Oct 5th',
     title: 'Oct 5th',
     text: 'Join us for a calming outdoor yoga experience focused on movement, connection and community.',
     image: '/assets/images/pink-is-punk/moonlit-yoga.png',
-    link: 'https://www.premieronline.com/event/ignite_pink_is_punk_moonlit_yoga_8762',
+    link: '',
+    year: '2025',
     viewphotos:
       'https://www.dropbox.com/scl/fo/fy1vw2jinxsx1psjjpjl4/AMm62UfpB8kNSaNaYIsJpMs?rlkey=jf3twc6h1xx1aszqu4asoael3&dl=0',
     viewvideos:
@@ -51,6 +53,7 @@ const PINK_EVENTS = [
     text: 'Take to the water and paddle with us in support of the Pink is Punk campaign.',
     image: '/assets/images/pink-is-punk/pink-paddle.png',
     link: 'https://www.premieronline.com/event/ignite_pink_is_punk_pink_paddle_8761',
+    year: '2025',
     viewphotos:
       'https://www.dropbox.com/scl/fo/gmm4req28g4luz8r92t63/AHqDDufwZT_rkscxLhR-vyk?rlkey=5jeadlhuq5mjcmgvjl0eqnxcf&st=um3xpb8p&dl=0',
     viewvideos:
@@ -448,35 +451,41 @@ export default function PinkIsPunkClient() {
                     {event.text}
                   </p>
 
-                  <a
-                    href={event.viewphotos}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="pink-event-link"
-                  >
-                    View 2025 Photos
-                    <span>↗</span>
-                  </a>
+                  {event.viewphotos?.trim() && (
+                    <a
+                      href={event.viewphotos}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="pink-event-link"
+                    >
+                      View {event.year} Photos
+                      <span>↗</span>
+                    </a>
+                  )}
 
-                  <a
-                    href={event.viewvideos}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="pink-event-link"
-                  >
-                    View 2025 Videos
-                    <span>↗</span>
-                  </a>
+                  {event.viewvideos?.trim() && (
+                    <a
+                      href={event.viewvideos}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="pink-event-link"
+                    >
+                      View {event.year} Videos
+                      <span>↗</span>
+                    </a>
+                  )}
 
-                  <a
-                    href={event.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="pink-event-link"
-                  >
-                    Register Now
-                    <span>↗</span>
-                  </a>
+                  {event.link?.trim() && (
+                    <a
+                      href={event.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="pink-event-link"
+                    >
+                      Register Now
+                      <span>↗</span>
+                    </a>
+                  )}
                 </div>
               </article>
             ))}
