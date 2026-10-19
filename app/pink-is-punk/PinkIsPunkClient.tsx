@@ -41,23 +41,23 @@ const PINK_EVENTS = [
     text: 'Join us for a calming outdoor yoga experience focused on movement, connection and community.',
     image: '/assets/images/pink-is-punk/moonlit-yoga.png',
     link: '',
-    year: '2025',
+    year: '2026',
     viewphotos:
-      'https://www.dropbox.com/scl/fo/fy1vw2jinxsx1psjjpjl4/AMm62UfpB8kNSaNaYIsJpMs?rlkey=jf3twc6h1xx1aszqu4asoael3&dl=0',
+      '',
     viewvideos:
-      'https://www.instagram.com/reel/DP3g7AaD0aq/?utm_source=ig_web_copy_link&igsh=MXdydTk4dTVuZWw1MQ==',
+      'https://www.youtube.com/watch?v=-dsdGm3e4BU&list=PL8oZhxPzOy2K7kTIY4-YZD6aKzjpCP65J',
   },
   {
     shortTitle: 'Pink is Punk Pink Paddle - Oct 10th',
     title: 'Oct 10th',
     text: 'Take to the water and paddle with us in support of the Pink is Punk campaign.',
     image: '/assets/images/pink-is-punk/pink-paddle.png',
-    link: 'https://www.premieronline.com/event/ignite_pink_is_punk_pink_paddle_8761',
-    year: '2025',
+    link: '',
+    year: '2026',
     viewphotos:
-      'https://www.dropbox.com/scl/fo/gmm4req28g4luz8r92t63/AHqDDufwZT_rkscxLhR-vyk?rlkey=5jeadlhuq5mjcmgvjl0eqnxcf&st=um3xpb8p&dl=0',
+      'https://www.dropbox.com/scl/fo/oewekpygf4hm5g5rvt5rc/AMV0f-gmgnQbW7SgPT7Dvzw?rlkey=4wy3zsffsogw877bc4tn5fxqd&st=gjo1fzpk&dl=0',
     viewvideos:
-      'https://www.instagram.com/reel/DQLpae4D66f/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+      '',
   },
 ];
 
