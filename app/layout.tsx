@@ -8,12 +8,37 @@ const archivo = Archivo({ subsets: ['latin'], weight: ['400','500','700','900'],
 const inter   = Inter({ subsets: ['latin'], weight: ['300','400','500','600','700'], variable: '--font-inter', display: 'swap' });
 
 export const metadata: Metadata = {
-  title: { default: 'IGNITE Dubai - Water Sports, Team Building & Corporate Wellness', template: '%s · IGNITE' },
-  description: 'IGNITE is Dubai`s leading active lifestyle brand. Water sports, team building and corporate wellness - trusted by P&G, Deloitte, McKinsey and 90+ leading organisations since 2010.',
-  icons: {
-    icon: "/assets/images/ignite-favicon.jpg",
-    shortcut: "/assets/logos/ignite-favicon.jpg",
-    apple: "/assets/logos/ignite-favicon.jpg",
+  title: "IGNITE Dubai - Water Sports, Team Building & Corporate Wellness",
+
+  description:
+    "IGNITE is Dubai`s leading active lifestyle brand. Water sports, team building and corporate wellness - trusted by P&G, Deloitte, McKinsey and 90+ leading organisations since 2010.",
+
+  openGraph: {
+    title: "IGNITE Dubai - Water Sports, Team Building & Corporate Wellness",
+
+    description:
+    "IGNITE is Dubai`s leading active lifestyle brand. Water sports, team building and corporate wellness - trusted by P&G, Deloitte, McKinsey and 90+ leading organisations since 2010.",
+    type: "website",
+    siteName: "IGNITE",
+    images: [
+      {
+        url: "https://ignite.ae/assets/images/ignite-favicon.jpg",
+        width: 1200,
+        height: 630,
+        alt: "IGNITE",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "IGNITE Dubai - Water Sports, Team Building & Corporate Wellness",
+
+    description:
+    "IGNITE is Dubai`s leading active lifestyle brand. Water sports, team building and corporate wellness - trusted by P&G, Deloitte, McKinsey and 90+ leading organisations since 2010.",
+    images: [
+      "https://ignite.ae/assets/images/ignite-favicon.jpg",
+    ],
   },
 };
 
