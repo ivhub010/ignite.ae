@@ -176,6 +176,15 @@ const BRANDS = [
 
 const LATEST_NEWS = [
   {
+    date: 'October 22, 2026',
+    title: 'dunnhumby x IGNITE Team Building',
+    image: '/assets/images/news/dunnhumby.png',
+    // link: 'https://ignite.ae/societe-generale/',
+    link: '#',
+    description:
+      'We had a great time hosting the team from dunnhumby. The day showed exactly what happens when a team comes together: sharp collaboration, healthy competition and a lot of fun. Thank you for the energy. See you again soon.',
+  },
+  {
     date: 'February 13, 2026',
     title: 'Société Générale',
     image: '/assets/images/news/societe.png',
