@@ -176,6 +176,24 @@ const BRANDS = [
 
 const LATEST_NEWS = [
   {
+    date: 'November 4, 2026',
+    title: 'LAPP x IGNITE Team Building | Aloft Palm Jumeirah',
+    image: '/assets/images/news/LAPP.png',
+    // link: 'https://ignite.ae/societe-generale/',
+    link: '#',
+    description:
+      'Three years on, LAPP chose IGNITE to run their team gathering again. This time we were at Aloft Palm Jumeirah, another beautiful venue on the Palm. The day was full of energy and friendly competition, and showed what makes real teams. Thank you, LAPP, for your continued trust.',
+  },
+  {
+    date: 'October 23, 2026',
+    title: 'GitHub x IGNITE Team Building | Family Beach Day',
+    image: '/assets/images/news/grithub.png',
+    // link: 'https://ignite.ae/societe-generale/',
+    link: '#',
+    description:
+      'Challenges, obstacles, beach games and families taking part together. We had a great time with the team from GitHub, and the day showed what a strong corporate culture looks like. Thank you, GitHub, for the energy. See you again soon.',
+  },
+  {
     date: 'October 22, 2026',
     title: 'dunnhumby x IGNITE Team Building',
     image: '/assets/images/news/dunnhumby.png',
